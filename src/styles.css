@@ -1,0 +1,114 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+  background: #d0d0d0;
+}
+/*hace referencia al li
+#menu li > a{
+  font-size: 18px;
+  font-weight: bold;
+  color:aqua;
+}*/
+#menu{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #313131;
+}
+
+#menu a{
+  font-size: 18px;
+  font-weight: bold;
+  color:lightskyblue;
+}
+
+#menu a:hover{
+  font-size: 18px;
+  font-weight: bold;
+  color:#d0d0d0;
+}
+
+#menu a.active{
+  font-size: 18px;
+  font-weight: normal;
+  color:#d0d0d0;
+}
+
+#dropItem.active{
+  background-color: #1b1b1b;
+}
+
+#dropItem:focus{
+  background-color: #1b1b1b;
+}
+
+#menu button{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#textHeadHome{
+  color:#414141;
+  font-weight:bold ;
+  background-color: lightskyblue;
+}
+
+#title{
+  color:dodgerblue;
+}
+
+#textHome{
+  font-size: 20px;
+  color:#414141;
+}
+
+.carousel-inner {
+  max-height: 40rem;
+}
+
+#footer {
+  background: lightskyblue;
+  min-height: 100px;
+}
+
+div.picture {
+  border-radius: 50%;
+  height: 100px;
+    width: 100px;
+}
+/* img.picture */
+.foto img {
+    /* border-collapse: collapse; */
+    border-radius: 50%;
+}
+
+/* DISPOSITIVOS MENORES A 768PX */
+@media (max-width:768px) {
+  #textHome {
+    width: 90% !important;
+  }
+
+  #hideOnDevice {
+    display: none;
+  }
+
+  #servicesHome {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .wrapper {
+    width: 70%;
+    padding-top: 10px;
+    margin-left: 20%;
+  }
+}
+/* PANTALLAS MAYORES A 769PX */
+@media (min-width:769px) {
+  #local {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .wrapper {
+    padding-top: 70px;
+  }
+}

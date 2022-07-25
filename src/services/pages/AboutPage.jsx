@@ -8,6 +8,7 @@ export const AboutPage = () => {
         {/* TODO: CHECK https://www.youtube.com/watch?v=KMPjYXpBYvU&ab_channel=MagtimusPro FOR IMAGES OF FB 
         https://www.youtube.com/watch?v=Z5MoBm99w1Q&ab_channel=SLeeDw
         https://www.youtube.com/watch?v=6qko7Nbe8YA&ab_channel=FalconMasters*/}
+        <img src="/assets/underConstruction.jpg" alt="" className='img-fluid p-1'/>
     </div>
     </>
   )

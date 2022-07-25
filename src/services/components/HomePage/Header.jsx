@@ -8,12 +8,12 @@ export const Header = () => {
     return (
         <>
             <section id="textHeadHome" className="container-fluid mt-0">
-                <div className="d-flex justify-content-center ">
+                <div className="d-flex justify-content-center">
                     <div className="p-2 bd-highlight">
                         <span>  Contactanos: </span>
                     </div>
                     <div className="p-2 bd-highlight" id='hideOnDevice'>
-                        <span className='d-flex align-items-center mx--'> {iconPhone} 444-800-1415 </span>
+                        <span className='d-flex align-items-center'> {iconPhone} 444-800-1415 </span>
                     </div>
                     <div className="p-2 bd-highlight" id='hideOnDevice'>
                         <span className='d-flex align-items-center mx-5'> {iconMail}  malagon.ortodoncia@gmail.com </span>

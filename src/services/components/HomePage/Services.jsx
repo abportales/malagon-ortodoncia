@@ -7,13 +7,15 @@ export const Services = () => {
 
     return (
         <>
-            <div className="container-fluid ">
-                <div id="servicesHome" className="row w-75 mx-auto my-1" >
-                    {
-                        services.map( (service) => (
-                            <ServiceItem key={service.id} {...service} />
-                        ))
-                    }
+            <div className="container">
+                <div className="row my-5">
+                    <div id="servicesHome" className="row mx-auto w-100 justify-content-center" >
+                        {
+                            services.map((service) => (
+                                <ServiceItem key={service.id} {...service} />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </>

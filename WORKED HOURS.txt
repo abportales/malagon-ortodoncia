@@ -4,7 +4,7 @@ MARTES: 4rs || 3h 07m   || pend         53min
 MIERCOLES: 3hrs 25min   || pend 4hrs    35min
 JUEVES: 7hrs || 1hrs    || complete
 VIERNES: 7hrs           ||      1hrs     debo 10hrs 28min
-SABADO: deberia 5hrs14min
-DOMINGO:
+SABADO: deberia 5hrs14min || hechas
+DOMINGO: deberia 5hrs14min
 
 TOTAL DE HORAS PAGADAS: 40 ($2000)

@@ -52,12 +52,12 @@ export const Navbar = () => {
                                         Invisalign
                                     </NavLink>
                                     </li>
-                                    <li><NavLink className="dropdown-item" id="dropItem" to="/damonq" onClick={onCollapse}>
-                                        Damon Q
-                                    </NavLink>
-                                    </li>
                                     <li><NavLink className="dropdown-item" id="dropItem" to="/metalbrackets" onClick={onCollapse}>
                                         Metal Brackets
+                                    </NavLink>
+                                    </li>
+                                    <li><NavLink className="dropdown-item" id="dropItem" to="/damonq" onClick={onCollapse}>
+                                        Damon Q
                                     </NavLink>
                                     </li>
                                 </ul>
@@ -93,7 +93,7 @@ export const Navbar = () => {
 
                             <NavLink
                                 className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
-                                to="about"
+                                to="/about"
                             >
                                 ¿Quiénes Somos?
                             </NavLink>

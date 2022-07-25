@@ -1,9 +1,9 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: #d0d0d0;
 }
-/*hace referencia al li
+/*hace referencia al 'a' dentro 'li' del contenedor o div con el id menu
 #menu li > a{
   font-size: 18px;
   font-weight: bold;
@@ -51,6 +51,11 @@ body {
   background-color: lightskyblue;
 }
 
+#titleServicesCard{
+  color:#414141;
+  background-color: lightskyblue;
+}
+
 #title{
   color:dodgerblue;
 }
@@ -60,6 +65,7 @@ body {
   color:#414141;
 }
 
+/* largo max q ocupara el carousel */
 .carousel-inner {
   max-height: 40rem;
 }
@@ -69,17 +75,51 @@ body {
   min-height: 100px;
 }
 
-div.picture {
+/* div.picture {
   border-radius: 50%;
   height: 100px;
-    width: 100px;
-}
+  width: 100px;
+} */
 /* img.picture */
 .foto img {
     /* border-collapse: collapse; */
     border-radius: 50%;
 }
 
+#cardServices {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  /* opacity: 0;
+  transition: .5s; */
+}
+
+/* #cardServices:hover #content {
+  opacity: 1;
+} */
+#mapaImg {
+  box-shadow: 1px 3px 3px 1px rgba(3, 32, 51, .8);
+}
+/* PANTALLAS MENORES A 576PX */
+@media (max-width:576px) {
+  #reviews {
+    width: 95% !important;
+  } 
+  img.picture{
+    width: 80% !important;
+    margin-left: 10%;
+  }
+  
+}
 /* DISPOSITIVOS MENORES A 768PX */
 @media (max-width:768px) {
   #textHome {
@@ -95,12 +135,19 @@ div.picture {
     text-align: center;
   }
 
-  .wrapper {
+  /* #mapaImg {
+ 
+  } */
+  #wrapper {
     width: 70%;
-    padding-top: 10px;
-    margin-left: 20%;
+    padding-top: 20px;
+     margin-left: 20%;
   }
+  /* #reviews {
+    width: 75% !important;
+  }  */
 }
+
 /* PANTALLAS MAYORES A 769PX */
 @media (min-width:769px) {
   #local {

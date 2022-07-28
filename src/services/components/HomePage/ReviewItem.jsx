@@ -9,7 +9,7 @@ export const ReviewItem = ({
     date,
 }) => {
 
-    const reviewImageUrl = (picture) ? `/assets/HomePage/${id}.jpg` : `/assets/HomePage/noProfilePic.jpg`;
+    const reviewImageUrl = (picture) ? `/assets/img/home/${id}.jpg` : `/assets/img/home/noProfilePic.jpg`;
 
     return (
         <div className="card col-md-12 col-sm-12 mb-2">

@@ -2,6 +2,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* overflow-x: hidden; */
   background: #d0d0d0;
+  font-size: 18px;
 }
 /*hace referencia al 'a' dentro 'li' del contenedor o div con el id menu
 #menu li > a{
@@ -146,6 +147,16 @@ body {
   /* #reviews {
     width: 75% !important;
   }  */
+}
+
+@media (max-width:992px) {
+  #menu #navBarContainer {
+    justify-content: end !important;
+  }
+
+  #hideOnDesktop {
+    display: none;
+  }
 }
 
 /* PANTALLAS MAYORES A 769PX */

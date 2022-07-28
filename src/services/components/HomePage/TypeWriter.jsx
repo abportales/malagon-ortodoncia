@@ -5,7 +5,7 @@ export const TypeWriter = () => {
         <>
             <TypewriterComponent
                 options={{
-                    strings: ['Malagón Ortodoncia', 'Estética Dental'],
+                    strings: ['Malagón', 'Ortodoncia y Estética Dental'],
                     pauseFor: 2000,
                     autoStart: true,
                     loop: true,

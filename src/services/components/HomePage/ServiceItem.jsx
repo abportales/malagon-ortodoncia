@@ -8,7 +8,7 @@ export const ServiceItem = ({
     path,
 }) => {
 
-    const serviceImageUrl = `/assets/HomePage/${id}.jpg`
+    const serviceImageUrl = `/assets/img/home/${id}.jpg`
 
     return (
         <>

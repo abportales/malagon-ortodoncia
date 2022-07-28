@@ -2,7 +2,7 @@ export const servicesHome = [
     {
         id: 'gridHome01',
         title: 'Invisaling',
-        info: 'Este es el momento clave para el éxito de tu tratamiento. Nos aseguraremos de que los alineadores se ajusten correctamente a tus dientes, responderemos tus preguntas y te informaraemos qué esperar del tratamiento.',
+        info: 'Este es el momento clave para el éxito de tu tratamiento. Nos aseguraremos de que los alineadores se ajusten correctamente a tus dientes, responderemos tus preguntas y te informaremos qué esperar del tratamiento.',
         width: 195,
         path: '/invisalign',
     },

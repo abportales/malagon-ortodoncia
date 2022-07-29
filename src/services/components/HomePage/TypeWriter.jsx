@@ -1,11 +1,11 @@
 import TypewriterComponent from "typewriter-effect"
 
-export const TypeWriter = () => {
+export const TypeWriter = ({message1, message2}) => {
     return (
         <>
             <TypewriterComponent
                 options={{
-                    strings: ['Malagón', 'Ortodoncia y Estética Dental'],
+                    strings: [message1, message2 ],
                     pauseFor: 2000,
                     autoStart: true,
                     loop: true,

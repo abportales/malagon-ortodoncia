@@ -4,19 +4,49 @@ body {
   background: #d0d0d0;
   font-size: 18px;
 }
-/*hace referencia al 'a' dentro 'li' del contenedor o div con el id menu
-#menu li > a{
-  font-size: 18px;
-  font-weight: bold;
-  color:aqua;
-}*/
+
+#gradientLU{
+  background: linear-gradient(to top left, #003366 0%, #336699 100%);
+}
+
+#gradientRU{
+  background: linear-gradient(to top right, #003366 0%, #336699 100%);
+}
+
+#gradientLB{
+  background: linear-gradient(to bottom left, #003366 0%, #336699 100%);
+}
+
+#gradientRB{
+  background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
+}
+
 #menu{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: #313131;
 }
 
+#darkBackground{
+  background: #313131;
+}
+
+/* test */
+.zoom {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.zoom img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+  transform: scale(1.15);
+}
+/* end test */
 #menu a{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color:lightskyblue;
 }
@@ -110,7 +140,9 @@ body {
 #mapaImg {
   box-shadow: 1px 3px 3px 1px rgba(3, 32, 51, .8);
 }
-/* PANTALLAS MENORES A 576PX */
+
+/***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
+/* PANTALLAS MENORES A 576PX =========================== CELULARES*/
 @media (max-width:576px) {
   #reviews {
     width: 95% !important;
@@ -119,16 +151,12 @@ body {
     width: 80% !important;
     margin-left: 10%;
   }
-  
 }
+
 /* DISPOSITIVOS MENORES A 768PX */
 @media (max-width:768px) {
   #textHome {
     width: 90% !important;
-  }
-
-  #hideOnDevice {
-    display: none;
   }
 
   #servicesHome {
@@ -136,20 +164,19 @@ body {
     text-align: center;
   }
 
-  /* #mapaImg {
- 
-  } */
   #wrapper {
     width: 70%;
     padding-top: 20px;
      margin-left: 20%;
   }
-  /* #reviews {
-    width: 75% !important;
-  }  */
-}
 
-@media (max-width:992px) {
+  div.orderLast{
+    order: 2 !important;
+  }
+}
+/* @media screen and (min-width:769px) and (max-width:992px) seria una opcion para segmentar mas los devices*/
+/* DISPOSITIVOS MENORES A 992PX */
+@media screen and (max-width:992px) {
   #menu #navBarContainer {
     justify-content: end !important;
   }
@@ -157,10 +184,25 @@ body {
   #hideOnDesktop {
     display: none;
   }
+
+  div#hideOnDevice {
+    display: none !important;
+  }
+
+  p#responsiveText{
+    font-size: 18px !important;
+  }
+}
+
+/* PANTALLA DE ESCRITORIO */
+@media (min-width:993px) {
+  p#responsiveText{
+    font-size: 26px !important;
+  }
 }
 
 /* PANTALLAS MAYORES A 769PX */
-@media (min-width:769px) {
+@media screen and (min-width:769px) {
   #local {
     flex-wrap: wrap;
     padding-top: 20px;

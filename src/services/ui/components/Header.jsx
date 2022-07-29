@@ -3,18 +3,32 @@ export const Header = () => {
 
     return (
         <>
-            <div className="container-fluid d-flex justify-content-center" id='menu'>
+            <div className="container-fluid" id='menu'>
                 <div className="row pt-2">
-                    <div className="col-4">
-                        <img className="pt-2 img-fluid" src="/assets/img/utilities/logo.jpg" alt="logo" width={400} />
+
+                    <div className="col-md-12 col-lg-3 offset-lg-1 d-flex justify-content-center pb-2">
+                        <img className=" img-fluid align-self-center"
+                            src="/assets/img/utilities/logo-consul.png" alt="logo"
+                            width="auto" height="300" style={{ maxHeight: 150 }} />
                     </div>
-                    <div className="col-4">
-                        <img className="col-4" src="/assets/img/utilities/logoinvisalign.png" alt="invisalign" width={200} />
-                        <span className="col-4 text-white mx-2 fs-3">CLINICA</span >
-                        <img className="col-4 img-fluid" src="/assets/img/utilities/logo-badge-platinum.png" alt="badge-platinum" width={20} />
+
+                    <div className="col-lg-2 d-flex justify-content-center" id="hideOnDevice">
+                        <img className="pt-3 img-fluid align-self-center"
+                            src="/assets/img/utilities/logo-itero.png" alt="iTero"
+                            width="130" height="auto" style={{ maxHeight: 100 }} />
                     </div>
-                    <div className="col-4">
-                        <img className="pt-3 img-fluid" src="/assets/img/utilities/logo-itero.png" alt="iTero" width={100} />
+
+                    <div className="col-lg-3 d-flex justify-content-center" id="hideOnDevice">
+                        <img className="img-fluid align-self-center"
+                            src="/assets/img/utilities/logoinvisalign.png" alt="invisalign"
+                            width="auto" height="100" />
+                    </div>
+                    <div className="col-lg-3 d-flex justify-content-center" id="hideOnDevice">
+                        <span className="text-white mx-2 fs-1 align-self-center border border-secondary rounded px-2">
+                            CLÍNICA<img className=" img-fluid rounded align-self-center ps-1"
+                                src="/assets/img/utilities/logo-badge-platinum.png" alt="badge-platinum"
+                                width="110" height="auto" />
+                        </span >
                     </div>
                 </div>
             </div>

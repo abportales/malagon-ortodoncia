@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 
 export const Header = () => {
 
@@ -7,21 +8,27 @@ export const Header = () => {
                 <div className="row pt-2">
 
                     <div className="col-md-12 col-lg-3 offset-lg-1 d-flex justify-content-center pb-2">
-                        <img className=" img-fluid align-self-center"
-                            src="/assets/img/utilities/logo-consul.png" alt="logo"
-                            width="auto" height="300" style={{ maxHeight: 150 }} />
+                        <NavLink to="/">
+                            <img className=" img-fluid align-self-center"
+                                src="/assets/img/utilities/logo-consul.png" alt="logo"
+                                width="auto" height="300" style={{ maxHeight: 150 }} />
+                        </NavLink>
                     </div>
 
                     <div className="col-lg-2 d-flex justify-content-center" id="hideOnDevice">
-                        <img className="pt-3 img-fluid align-self-center"
-                            src="/assets/img/utilities/logo-itero.png" alt="iTero"
-                            width="130" height="auto" style={{ maxHeight: 100 }} />
+                        <NavLink to="/itero">
+                            <img className="pt-3 img-fluid align-self-center"
+                                src="/assets/img/utilities/logo-itero.png" alt="iTero"
+                                width="130" height="auto" style={{ maxHeight: 100 }} />
+                        </NavLink>
                     </div>
 
                     <div className="col-lg-3 d-flex justify-content-center" id="hideOnDevice">
-                        <img className="img-fluid align-self-center"
-                            src="/assets/img/utilities/logoinvisalign.png" alt="invisalign"
-                            width="auto" height="100" />
+                        <NavLink to="/invisalign">
+                            <img className="img-fluid align-self-center"
+                                src="/assets/img/utilities/logoinvisalign.png" alt="invisalign"
+                                width="auto" height="100" />
+                        </NavLink>
                     </div>
                     <div className="col-lg-3 d-flex justify-content-center" id="hideOnDevice">
                         <span className="text-white mx-2 fs-1 align-self-center border border-secondary rounded px-2">

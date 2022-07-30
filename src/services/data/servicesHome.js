@@ -2,7 +2,7 @@ export const servicesHome = [
     {
         id: 'gridHome01',
         title: 'Invisaling',
-        info: 'Este es el momento clave para el éxito de tu tratamiento. Nos aseguraremos de que los alineadores se ajusten correctamente a tus dientes, responderemos tus preguntas y te informaremos qué esperar del tratamiento.',
+        info: 'Comenzarás a ver los resultados en unas pocas semanas, el tiempo total de tratamiento dependerá de la complejidad de tu diagnóstico, algunos casos pueden completar tu tratamiento en aproximadamente 6 meses.',
         width: 195,
         path: '/invisalign',
     },

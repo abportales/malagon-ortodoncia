@@ -5,29 +5,44 @@ body {
   font-size: 18px;
 }
 
-#gradientLU{
+#gradientLU {
   background: linear-gradient(to top left, #003366 0%, #336699 100%);
 }
 
-#gradientRU{
+#gradientRU {
   background: linear-gradient(to top right, #003366 0%, #336699 100%);
 }
 
-#gradientLB{
+#gradientLB {
   background: linear-gradient(to bottom left, #003366 0%, #336699 100%);
 }
 
-#gradientRB{
+#gradientRB {
   background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
 }
 
-#menu{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#gradient1A {
+  background: linear-gradient(to top left, #0099cc 0%, #003366 100%);
+}
+
+#gradient1B {
+  background: linear-gradient(to top right, #0099cc 0%, #003366 100%);
+}
+
+#gradient1C {
+  background: linear-gradient(to bottom left, #0099cc 0%, #003366 100%);
+}
+
+#gradient1D {
+  background: linear-gradient(to bottom right, #0099cc 0%, #003366 100%);
+}
+
+#darkBackground {
   background: #313131;
 }
 
-#darkBackground{
-  background: #313131;
+#whiteBg {
+  background: #d0d0d0;
 }
 
 /* test */
@@ -44,56 +59,72 @@ body {
 .zoom:hover img {
   transform: scale(1.15);
 }
+
 /* end test */
-#menu a{
+
+#menu {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #313131;
+}
+
+#menu a {
   font-size: 20px;
   font-weight: bold;
-  color:lightskyblue;
+  color: lightskyblue;
+  transition: 0.2s all ease-in-out
 }
 
-#menu a:hover{
-  font-size: 18px;
-  font-weight: bold;
-  color:#d0d0d0;
+#menu a:hover {
+  transform: scale(1.05);
+  color: #d0d0d0;
 }
 
-#menu a.active{
-  font-size: 18px;
-  font-weight: normal;
-  color:#d0d0d0;
+#menu a.active {
+  /* transition: all 0.5s; */
+  color: #d0d0d0;
 }
 
-#dropItem.active{
+#dropItem.active {
   background-color: #1b1b1b;
 }
 
-#dropItem:focus{
+#dropItem:focus {
   background-color: #1b1b1b;
 }
 
-#menu button{
+#menu button {
   font-size: 18px;
   font-weight: bold;
 }
 
-#textHeadHome{
-  color:#414141;
-  font-weight:bold ;
+#textHeadHome {
+  color: #414141;
+  font-weight: bold;
   background-color: lightskyblue;
 }
 
-#titleServicesCard{
-  color:#414141;
+#titleServicesCard {
+  color: #414141;
   background-color: lightskyblue;
 }
 
-#title{
-  color:dodgerblue;
+#title {
+  color: dodgerblue;
 }
 
-#textHome{
+#titleOp1 {
+  /* color oficial invisalign
+  color: #009ace; */
+  color: aqua;
+}
+
+#titleOp2 {
+  color: #e2bd59;
+}
+
+#textHome {
   font-size: 20px;
-  color:#414141;
+  color: #414141;
 }
 
 /* largo max q ocupara el carousel */
@@ -113,8 +144,8 @@ body {
 } */
 /* img.picture */
 .foto img {
-    /* border-collapse: collapse; */
-    border-radius: 50%;
+  /* border-collapse: collapse; */
+  border-radius: 50%;
 }
 
 #cardServices {
@@ -134,22 +165,52 @@ body {
   transition: .5s; */
 }
 
-/* #cardServices:hover #content {
-  opacity: 1;
-} */
 #mapaImg {
   box-shadow: 1px 3px 3px 1px rgba(3, 32, 51, .8);
 }
+
+/* ================================================================================================ scrolling page */
+#containerPatients>section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+}
+
+#containerPatients>section>row {
+  /*1vh = 1% de la altura del viewport
+  100vh = altura del viewport
+  1vw = 1% del ancho del viewport
+  100vw = ancho del viewport*/
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
 /* PANTALLAS MENORES A 576PX =========================== CELULARES*/
 @media (max-width:576px) {
   #reviews {
     width: 95% !important;
-  } 
-  img.picture{
+  }
+
+  img.picture {
     width: 80% !important;
     margin-left: 10%;
+  }
+
+  .imgMaxHeight {
+    /* width: 90% !important; */
+    margin-left: 5%;
+    max-height: 20rem !important;
+    max-width: 90% !important;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+  }
+
+  div#containerPatients {
+    width: 96% !important;
   }
 }
 
@@ -167,13 +228,14 @@ body {
   #wrapper {
     width: 70%;
     padding-top: 20px;
-     margin-left: 20%;
+    margin-left: 20%;
   }
 
-  div.orderLast{
+  div.orderLast {
     order: 2 !important;
   }
 }
+
 /* @media screen and (min-width:769px) and (max-width:992px) seria una opcion para segmentar mas los devices*/
 /* DISPOSITIVOS MENORES A 992PX */
 @media screen and (max-width:992px) {
@@ -189,15 +251,28 @@ body {
     display: none !important;
   }
 
-  p#responsiveText{
+  p#responsiveText {
     font-size: 18px !important;
   }
+
+  #responsiveText>li {
+    font-size: 16px !important;
+  }
+
 }
 
 /* PANTALLA DE ESCRITORIO */
 @media (min-width:993px) {
-  p#responsiveText{
+  p#responsiveText {
     font-size: 26px !important;
+  }
+
+  #responsiveText>li {
+    font-size: 24px !important;
+  }
+  
+  .imgMaxHeight {
+    max-height: 30rem !important;
   }
 }
 

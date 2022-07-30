@@ -10,14 +10,14 @@ export const Footer = () => {
                 
                 <div id="icons" className="p-2 mb-5 d-flex justify-content-center">
                     <a href="https://www.facebook.com/Malag%C3%B3n-Ortodoncia-y-Est%C3%A9tica-Dental-102640908193284" target="_blank">
-                        <i className="bi bi-facebook fs-2 mx-3"></i>
+                        <i className="bi bi-facebook fs-1 mx-3"></i>
                     </a>
                     <a href="https://www.instagram.com/malagon.ortodoncia" target="_blank">
-                        <i className="bi bi-instagram fs-2 text-danger mx-3"></i>
+                        <i className="bi bi-instagram fs-1 text-danger mx-3"></i>
                     </a>
-                    <a href="#">
+                    {/* <a href="#">
                         <i className="bi bi-twitter fs-2 mx-3"></i>
-                    </a>
+                    </a> */}
                 </div>
 
             </footer>

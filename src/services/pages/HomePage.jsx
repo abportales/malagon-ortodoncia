@@ -1,4 +1,5 @@
 import { Header, TypeWriter, Carousel, Services, Reviews } from '../components/HomePage'
+import { TopFooter } from '../ui/components/TopFooter'
 
 export const HomePage = () => {
     return (
@@ -33,6 +34,7 @@ export const HomePage = () => {
                 </div>
             </section>
             <Reviews />
+            <TopFooter bgColor={'whiteBg'}/>
         </>
     )
 }

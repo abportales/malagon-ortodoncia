@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
 
@@ -38,7 +38,7 @@ export const Navbar = () => {
                                         aria-expanded="false">
                                         Tratamientos
                                     </a>
-                                    <ul className="dropdown-menu dropdown-menu-dark" >
+                                    <ul className="dropdown-menu dropdown-menu-dark dropdown-content" >
                                         <li><NavLink className="dropdown-item" id="dropItem" to="/invisalign" onClick={onCollapse}>
                                             Invisalign
                                         </NavLink>

@@ -37,6 +37,14 @@ body {
   background: linear-gradient(to bottom right, #0099cc 0%, #003366 100%);
 }
 
+#gradient2A {
+  background: linear-gradient(to bottom, #003366 0%, #669999 100%);
+}
+
+#gradient2B {
+  background: linear-gradient(to top, #003366 0%, #669999 100%);
+}
+
 #darkBackground {
   background: #313131;
 }
@@ -45,7 +53,7 @@ body {
   background: #d0d0d0;
 }
 
-/* test */
+/* =================================================================================== ANIMATION FOR IMG ZOOM EFFECT*/
 .zoom {
   overflow: hidden;
   margin: 0 auto;
@@ -61,7 +69,7 @@ body {
 }
 
 /* end test */
-
+/* =================================================================================== FOR MENU */
 #menu {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: #313131;
@@ -84,6 +92,14 @@ body {
   color: #d0d0d0;
 }
 
+.dropdown {
+  position: relative; 
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 #dropItem.active {
   background-color: #1b1b1b;
 }
@@ -96,7 +112,7 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
-
+/* =========================================================== END FOR MENU */
 #textHeadHome {
   color: #414141;
   font-weight: bold;
@@ -137,14 +153,7 @@ body {
   min-height: 100px;
 }
 
-/* div.picture {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-} */
-/* img.picture */
 .foto img {
-  /* border-collapse: collapse; */
   border-radius: 50%;
 }
 
@@ -170,22 +179,19 @@ body {
 }
 
 /* ================================================================================================ scrolling page */
-#containerPatients>section {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-}
-
-#containerPatients>section>row {
+#containerFrecuency>section {
   /*1vh = 1% de la altura del viewport
   100vh = altura del viewport
   1vw = 1% del ancho del viewport
   100vw = ancho del viewport*/
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* border-bottom: 1px solid white; */
+  padding-bottom: 1rem;
   height: 100vh;
 }
 
+#containerItero>section {
+  height: 100vh;
+}
 
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
 /* PANTALLAS MENORES A 576PX =========================== CELULARES*/
@@ -209,8 +215,26 @@ body {
     border-radius: 10%;
   }
 
-  div#containerPatients {
+  .imgMaxHeight2 {
+    margin-left: 2.5%;
+    max-height: 25rem !important;
+    max-width: 94% !important;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+  }
+
+  div#containerFrecuency,
+  div#containerItero {
     width: 96% !important;
+  }
+
+  #containerItero>section {
+    height: 75vh;
+  }
+
+  .imgMaxHeight {
+    max-height: 200px !important;
   }
 }
 
@@ -230,10 +254,6 @@ body {
     padding-top: 20px;
     margin-left: 20%;
   }
-
-  div.orderLast {
-    order: 2 !important;
-  }
 }
 
 /* @media screen and (min-width:769px) and (max-width:992px) seria una opcion para segmentar mas los devices*/
@@ -252,27 +272,54 @@ body {
   }
 
   p#responsiveText {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
 
   #responsiveText>li {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 
+  div.orderLast {
+    order: 2 !important;
+  }
 }
 
 /* PANTALLA DE ESCRITORIO */
 @media (min-width:993px) {
   p#responsiveText {
-    font-size: 26px !important;
+    font-size: 26px;
   }
 
   #responsiveText>li {
-    font-size: 24px !important;
+    font-size: 24px;
   }
-  
+
   .imgMaxHeight {
-    max-height: 30rem !important;
+    max-height: 45rem !important;
+    /* display: inline !important; */
+  }
+}
+
+/* PANTALLA DE ESCRITORIO HD */
+@media (min-width:1024px) {
+
+  div#containerItero {
+    width: 90% !important;
+  }
+
+  p#responsiveText {
+    font-size: 26px !important;
+  }
+}
+
+@media (min-width:1439px) {
+
+  div#containerItero {
+    width: 90% !important;
+  }
+
+  p#responsiveText {
+    font-size: 32px !important;
   }
 }
 

@@ -3,15 +3,12 @@ LUNES:               || pend 8hrs
 MARTES:     33min    || pend 7hrs 27min
 MIERCOLES:   8       || pend 0
 JUEVES:      8       || pend 0
-VIERNES:            ||      
-SABADO:             || 
+VIERNES:      8      
+SABADO:        2     || 6
 DOMINGO:            ||
 
 TOTAL DE HORAS PAGADAS: 40 ($2000)
 
-#maybe util for the future
-pendiente meter el link y alguno de esto en invisalign
-https://www.invisalign.com.mx/como-usar/invisalign-smileview
-
-crear ventanas
-https://www.w3schools.com/howto/howto_css_modals.asp
+/* TODO: CHECK https://www.youtube.com/watch?v=KMPjYXpBYvU&ab_channel=MagtimusPro FOR IMAGES OF FB 
+        https://www.youtube.com/watch?v=Z5MoBm99w1Q&ab_channel=SLeeDw
+        https://www.youtube.com/watch?v=6qko7Nbe8YA&ab_channel=FalconMasters*/

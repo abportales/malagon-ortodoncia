@@ -7,7 +7,7 @@ export const Header = () => {
             <div className="container-fluid" id='menu'>
                 <div className="row pt-2">
 
-                    <div className="col-md-12 col-lg-3 offset-lg-1 d-flex justify-content-center pb-2">
+                    <div className="col-md-12 col-lg-3 offset-lg-1 d-flex justify-content-center pb-2" >
                         <NavLink to="/">
                             <img className=" img-fluid align-self-center"
                                 src="/assets/img/utilities/logo-consul.png" alt="logo"

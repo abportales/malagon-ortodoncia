@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
     "react-scroll-motion": "^0.3.0",
+    "scrollreveal": "^4.0.9",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

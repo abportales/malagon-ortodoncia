@@ -5,6 +5,7 @@ export const InvisalignPage = () => {
   AOS.init({ 
     duration: 1000, 
     mirror: true,
+    easing: 'ease',
    }) // values from 0 to 3000, with step 50ms)
    
   const url = "https://providerbio-latam.invisalign.com/sv/1252996#start"
@@ -13,7 +14,7 @@ export const InvisalignPage = () => {
     <>
       <div className="container-fluid w-100">
         <section className='row' id='gradientRU'>
-          <div className='col-lg-6 col-md-12 d-flex px-3 pt-2' data-aos="fade-down-right">
+          <div className='col-lg-6 col-md-12 d-flex px-3 pt-2' data-aos="fade-up-left">
             <div className='border rounded align-self-center' >
               <h1 className='text-center' id='titleOp1'>Alineadores Invisalign®</h1>
               <p className='text-white px-4' id='responsiveText'>
@@ -21,17 +22,17 @@ export const InvisalignPage = () => {
               </p>
             </div>
           </div>
-          <div className='col-lg-6 col-md-12 zoom' data-aos="fade-down-left">
+          <div className='col-lg-6 col-md-12 zoom' data-aos="fade-down-right" style={{maxHeight:'750px'}}>
             <img className='img-fluid imgMaxHeight2' src="/assets/img/invisalign/00alineadorinvisalign.jpg" alt="00alineadorinvisalign" />
           </div>
         </section>
 
         <section className='row' id='gradientRB'>
-          <div className='col-lg-6 col-md-12 zoom orderLast' data-aos="fade-up-right">
+          <div className='col-lg-6 col-md-12 zoom orderLast' data-aos="fade-up-left" style={{maxHeight:'800px'}}>
             <img className='img-fluid imgMaxHeight2' src="/assets/img/invisalign/01alineadorinvisalign.jpg" alt="01alineadorinvisalign" />
           </div>
           <div className='col-lg-6 col-md-12 d-flex px-3'>
-            <div className=' border rounded align-self-center' data-aos="fade-up-left">
+            <div className=' border rounded align-self-center' data-aos="fade-down-right">
               <h1 className='text-center' id='titleOp1'>¿Como funciona el tratamiento Invisalign®?</h1>
               <p className='text-white fs-2 px-4' id='responsiveText'>
                 Los alineadores de Invisalign® mueven los dientes siguiendo una serie de movimientos cuidadosamente controlados y programados. Por tanto, en cada etapa se permite únicamente el movimiento de determinados dientes, siguiendo un plan de tratamiento para dicha etapa en particular.
@@ -55,13 +56,13 @@ export const InvisalignPage = () => {
               </p>
             </div>
           </div>
-          <div className='col-lg-6 col-md-12 zoom' data-aos="flip-up">
+          <div className='col-lg-6 col-md-12 zoom' data-aos="flip-down">
             <img className='img-fluid imgMaxHeight' src="/assets/img/invisalign/02alineadorinvisalign.jpg" alt="02alineadorinvisalign" />
           </div>
         </section>
 
         <section className='row' id='gradientRB'>
-          <div className='col-lg-6 col-md-12 zoom orderLast' data-aos="flip-down">
+          <div className='col-lg-6 col-md-12 zoom orderLast' data-aos="flip-up">
             <img className='img-fluid imgMaxHeight' src="/assets/img/invisalign/03alineadorinvisalign.jpg" alt="03alineadorinvisalign" style={{ maxHeight: '100rem' }} />
           </div>
           <div className='col-lg-6 col-md-12 d-flex px-3' data-aos="flip-down">

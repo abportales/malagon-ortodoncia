@@ -52,14 +52,14 @@ export const Itero = () => {
                             </div>
                         </div>
                         <div className='col-lg-7 col-md-12 zoom d-flex orderLast' data-aos="fade-right">
-                            <img className='img-fluid imgMaxHeight2 align-self-center'
+                            <img className='img-fluid imgMaxHeight2 align-self-center' style={{maxHeight:'750px'}}
                                 src="/assets/img/itero/iteroVideo.gif" alt="invisalign" />
                         </div>
                     </section>
                 </div>
 
             </div>
-            <TopFooter bgColor={'gradient2B'} />
+            <TopFooter bgColor={'darkBackground'} />
         </>
     )
 }

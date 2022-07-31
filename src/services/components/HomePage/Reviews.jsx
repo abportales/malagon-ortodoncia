@@ -1,10 +1,15 @@
 import AOS from 'aos'
-import { reviewsHome } from '../../data/reviewsHome'
+import { getReviewsForNumber } from '../../helpers/getReviewsForNumber'
 import { ReviewItem } from './ReviewItem'
 
-export const Reviews = () => {
-    AOS.init({ duration: 1000 }) // values from 0 to 3000, with step 50ms)
-    const reviews = reviewsHome
+export const Reviews = ({numberOfReviews}) => {
+    AOS.init({ 
+        duration: 1000, 
+        mirror:true,
+        easing: 'ease'
+     }) // values from 0 to 3000, with step 50ms)
+     console.log(`valor: ${numberOfReviews}`)
+    const reviews = getReviewsForNumber(3)
 
     return (
         <>

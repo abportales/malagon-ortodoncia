@@ -1,7 +1,15 @@
 
+import Aos from 'aos'
 import { TopFooter } from '../ui/components/TopFooter'
 
 export const FrequencyQuestions = () => {
+
+    Aos.init({
+        duration: 1000,
+        mirror: true,
+        easing: 'ease',
+    })
+
     return (
         <>
             <div id="darkBackground">
@@ -9,7 +17,9 @@ export const FrequencyQuestions = () => {
 
                     <section className='row'>
                         <div className="row" id='gradient1A'>
-                            <div className='col-12 d-flex px-3 pt-2 rounded' >
+                            <div className='col-12 d-flex px-3 pt-2 rounded'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
                                 <div className='align-self-center' >
                                     <h1 className='text-center' id='titleOp2'>Ortodoncia</h1>
                                     <div className="row d-flex">
@@ -27,7 +37,9 @@ export const FrequencyQuestions = () => {
 
                     <section className='row'>
                         <div className='row' id='gradient1C'>
-                            <div className='col-12 d-flex px-3 pt-2' >
+                            <div className='col-12 d-flex px-3 pt-2'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
                                 <div className='align-self-center' >
                                     <h1 className='text-center' id='titleOp2'>¿Cómo sé si necesito tratamiento de ortodoncia?</h1>
                                     <p className='text-white px-4 col-lg-8 offset-lg-2' id='responsiveText' align="justify">
@@ -40,7 +52,9 @@ export const FrequencyQuestions = () => {
 
                     <section className='row'>
                         <div className='row' id='gradient1A'>
-                            <div className='col-12 d-flex px-3 pt-2'>
+                            <div className='col-12 d-flex px-3 pt-2'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
                                 <div className='align-self-center' >
                                     <h1 className='text-center' id='titleOp2'>¿Qué son los brackets?</h1>
                                     <p className='text-white px-4 col-lg-8 offset-lg-2' id='responsiveText' align="justify">
@@ -54,7 +68,9 @@ export const FrequencyQuestions = () => {
                     <section className='row'>
                         <div className='row' id='gradient1C'>
 
-                            <div className='col-12 d-flex px-3 pt-2' id='gradient1C'>
+                            <div className='col-12 d-flex px-3 pt-2' id='gradient1C'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
                                 <div className='align-self-center' >
                                     <h1 className='text-center' id='titleOp2'>¿Qué tipos de brackets existen?</h1>
                                     <p className='text-white px-4 col-lg-8 offset-lg-2' id='responsiveText'>
@@ -72,11 +88,15 @@ export const FrequencyQuestions = () => {
 
                     <section className='row'>
                         <div className='row' id='gradient1A'>
-                            <div className='col-lg-3 col-md-12 zoom orderLast d-flex'>
+                            <div className='col-lg-3 col-md-12 zoom orderLast d-flex'
+                                data-aos="flip-left"
+                                data-aos-anchor-placement="top-bottom">
                                 <img className='img-fluid imgMaxHeight align-self-center' style={{ maxHeight: '250px' }}
                                     src="/assets/img/patients/00bracketconvencionales.jpg" alt="00bracketconvencionales" />
                             </div>
-                            <div className='col-lg-6 col-md-12 d-flex px-3 pt-2' >
+                            <div className='col-lg-6 col-md-12 d-flex px-3 pt-2'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom" >
                                 <div className='align-self-center' >
                                     <h1 className='text-center' id='titleOp2'>Brackets Convencionales</h1>
                                     <p className='text-white px-4' id='responsiveText' align="justify">
@@ -84,7 +104,9 @@ export const FrequencyQuestions = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-lg-3 col-md-12 zoom d-flex'>
+                            <div className='col-lg-3 col-md-12 zoom d-flex'
+                                data-aos="flip-left"
+                                data-aos-anchor-placement="top-bottom">
                                 <img className='img-fluid imgMaxHeight align-self-center' style={{ maxHeight: '250px' }}
                                     src="/assets/img/patients/01bracketconvencionales.jpg" alt="01bracketconvencionales" />
                             </div>
@@ -93,7 +115,9 @@ export const FrequencyQuestions = () => {
 
                     <section className='row'>
                         <div className='row' id='gradient1C'>
-                            <div className='col-lg-8 col-md-12 d-flex px-3 pt-2' >
+                            <div className='col-lg-8 col-md-12 d-flex px-3 pt-2'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
                                 <div className='align-self-center' >
                                     <h1 className='text-center' id='titleOp2'>Brackets Autoligables</h1>
                                     <p className='text-white px-4' id='responsiveText' align="justify">
@@ -101,7 +125,9 @@ export const FrequencyQuestions = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-md-12 zoom d-flex'>
+                            <div className='col-lg-4 col-md-12 zoom d-flex'
+                                data-aos="flip-left"
+                                data-aos-anchor-placement="top-bottom">
                                 <img className='img-fluid imgMaxHeight p-3 align-self-center' style={{ maxHeight: '350px' }}
                                     src="/assets/img/patients/02bracketautoligable.jpg" alt="02bracketautoligable" />
                             </div>
@@ -110,11 +136,15 @@ export const FrequencyQuestions = () => {
 
                     <section className='row'>
                         <div className='row' id='gradient1A'>
-                            <div className='col-lg-4 col-md-12 zoom orderLast d-flex' >
+                            <div className='col-lg-4 col-md-12 zoom orderLast d-flex'
+                                data-aos="flip-left"
+                                data-aos-anchor-placement="top-bottom">
                                 <img className='img-fluid imgMaxHeight p-3 align-self-center' style={{ maxHeight: '350px' }}
                                     src="/assets/img/patients/03bracketautoligable.jpg" alt="03bracketautoligable" />
                             </div>
-                            <div className='col-lg-8 col-md-12 d-flex px-3 pt-2'>
+                            <div className='col-lg-8 col-md-12 d-flex px-3 pt-2'
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">
                                 <div className='align-self-center row' >
                                     <p className='text-white px-4 col-lg-10 offset-lg-1' id='responsiveText' align="justify">
                                         Otra diferencia es que los brackets autoligables reducen la fricción que se produce entre el bracket y el arco, que facilita determinadas fases del tratamiento.

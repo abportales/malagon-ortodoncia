@@ -33,7 +33,7 @@ export const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <Reviews />
+            <Reviews numberOfReviews={3}/>
             <TopFooter bgColor={'whiteBg'}/>
         </>
     )

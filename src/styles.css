@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* overflow-x: hidden; */
@@ -43,6 +47,10 @@ body {
 
 #gradient2B {
   background: linear-gradient(to top, #003366 0%, #669999 100%);
+}
+
+.bgDark {
+  background: #313131;
 }
 
 #darkBackground {
@@ -93,9 +101,10 @@ body {
 }
 
 .dropdown {
-  position: relative; 
+  position: relative;
   display: inline-block;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -112,6 +121,7 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+
 /* =========================================================== END FOR MENU */
 #textHeadHome {
   color: #414141;
@@ -124,17 +134,15 @@ body {
   background-color: lightskyblue;
 }
 
-#title {
+.titleColor1 {
   color: dodgerblue;
 }
 
-#titleOp1 {
-  /* color oficial invisalign
-  color: #009ace; */
+.titleColor2 {
   color: aqua;
 }
 
-#titleOp2 {
+.titleColor3 {
   color: #e2bd59;
 }
 
@@ -153,7 +161,7 @@ body {
   min-height: 100px;
 }
 
-.foto img {
+.roundedImg {
   border-radius: 50%;
 }
 
@@ -164,7 +172,7 @@ body {
   box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
 }
 
-#content {
+#content-servicesItem {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,6 +186,82 @@ body {
   box-shadow: 1px 3px 3px 1px rgba(3, 32, 51, .8);
 }
 
+/* ================================================================================================ CSS FOR PATIENTS' GALLERY */
+.patients {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* contenedor */
+.container-patients {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* Grid */
+  display: grid;
+  /* una columna de la fraccion y otra igual (50%) */
+  grid-template-columns: 1fr 3fr; 
+  /* separacion interne entre elementos */
+  gap: 10px;
+}
+
+.container-patients2 {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* Grid */
+  display: grid;
+  /* una columna de la fraccion y otra igual (50%) */
+  grid-template-columns: 3fr 1fr; 
+  /* separacion interne entre elementos */
+  gap: 10px;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+/* .contenedor-conciertos { */
+.gallery {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card .textos {
+	height: 100%;
+}
+
+.banner {
+	border-radius: 10px;
+	/* text-align: center; */
+	/* padding: 10px; */
+	background-size: cover;
+	background-position: center center;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+/* ================================================================================================ END ==== PATIENTS' GALLERY */
+
 /* ================================================================================================ scrolling page */
 #containerFrecuency>section {
   /*1vh = 1% de la altura del viewport
@@ -189,76 +273,230 @@ body {
   height: 100vh;
 }
 
+#containerInvisalign>section,
 #containerItero>section {
   height: 100vh;
 }
 
+.pMid {
+  font-size: 30px;
+}
+
+.pLong {
+  font-size: 26px;
+}
+
+.imgMaxHeight {
+  max-height: 45rem;
+}
+
+.imgLarge {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.pShort {
+  font-size: 34px;
+}
+
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
-/* PANTALLAS MENORES A 576PX =========================== CELULARES*/
-@media (max-width:576px) {
-  #reviews {
-    width: 95% !important;
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .text-itero {
+    font-size: 34px;
   }
 
-  img.picture {
-    width: 80% !important;
-    margin-left: 10%;
+  .pMid {
+    font-size: 22px;
+  }
+
+  .pLong {
+    font-size: 18px;
+  }
+
+  /* oldssssssssssssssssssssssssssssssssss */
+  p#responsiveText {
+    font-size: 26px;
+  }
+
+  #responsiveText>li {
+    font-size: 24px;
+  }
+
+  p#responsiveText2 {
+    font-size: 24px !important;
+  }
+
+  div#containerItero {
+    width: 90% !important;
+  }
+
+  p#responsiveText {
+    font-size: 32px !important;
+  }
+
+  p#responsiveText2 {
+    font-size: 28px !important;
+  }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+  .titleHead-clinic {
+    font-size: 25px !important;
+  }
+
+  .pShort {
+    font-size: 26px;
+  }
+
+  .text-itero {
+    font-size: 28px;
+  }
+
+  /* oldssssssssssssssssssssssssssssssssss */
+  .imgHead-itero,
+  .imgHead-clinic {
+    width: 100px !important;
+    /* height: 0px !important; */
+  }
+
+
+  div#containerItero {
+    width: 90% !important;
+  }
+/* // Large devices (desktops, less than 1200px) */
+  .review {
+    width: 75% !important;
+  }
+
+  p#responsiveText {
+    font-size: 26px;
+  }
+
+  #responsiveText>li {
+    font-size: 24px;
+  }
+
+  p#responsiveText2 {
+    font-size: 24px !important;
   }
 
   .imgMaxHeight {
-    /* width: 90% !important; */
+    max-height: 45rem !important;
+    /* display: inline !important; */
+  }
+
+  p#responsiveText {
+    font-size: 26px !important;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  #review {
+    width: 75% !important;
+  }
+
+  .imgLarge {
+    height: 25rem;
+    max-width: 75%;
+    border-radius: 10%;
+  }
+
+  .imgShort {
+    height: 15rem;
+    max-width: 90%;
+    border-radius: 10%;
+  }
+
+  .imgMaxHeight {
+    height: 20rem !important;
     margin-left: 5%;
-    max-height: 20rem !important;
     max-width: 90% !important;
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 10%;
   }
 
-  .imgMaxHeight2 {
-    margin-left: 2.5%;
-    max-height: 25rem !important;
-    max-width: 94% !important;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 10%;
+  /* oldssssssssssssssssssssssssssssssssss */
+  #menu #navBarContainer {
+    justify-content: end !important;
   }
 
-  div#containerFrecuency,
+  .zoom img {
+    width: 60%;
+  }
+
+  #hideOnDesktop {
+    display: none;
+  }
+
+  div#hideOnDevice {
+    display: none !important;
+  }
+
+  p#responsiveText {
+    font-size: 20px !important;
+  }/* // Medium devices (tablets, less than 992px) */
+
+  #responsiveText>li {
+    font-size: 18px !important;
+  }
+
+  p#responsiveText2 {
+    font-size: 18px !important;
+  }
+
+  div.orderLast {
+    order: 2 !important;
+  }
+
   div#containerItero {
     width: 96% !important;
   }
-
-  #containerItero>section {
-    height: 75vh;
-  }
-
-  .imgMaxHeight {
-    max-height: 200px !important;
-  }
 }
 
-/* DISPOSITIVOS MENORES A 768PX */
-@media (max-width:768px) {
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  div.review {
+    width: 75% !important;
+  }
+
+  .zoom img {
+    width: 100%;
+  }
+  
+  .imgShort {
+    height: 15rem;
+    width: 50% !important;
+    border-radius: 10%;
+  }
+
+  /* oldssssssssssssssssssssssssssssssssss */
   #textHome {
     width: 90% !important;
   }
 
-  #servicesHome {
-    width: 100% !important;
-    text-align: center;
-  }
-
-  #wrapper {
+  /* #wrapper {
     width: 70%;
     padding-top: 20px;
     margin-left: 20%;
-  }
-}
+  } */
 
-/* @media screen and (min-width:769px) and (max-width:992px) seria una opcion para segmentar mas los devices*/
-/* DISPOSITIVOS MENORES A 992PX */
-@media screen and (max-width:992px) {
+  .imgMaxHeight2 {
+    max-height: 30rem !important;
+    max-width: 35rem;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+  }/* // Small devices (landscape phones, less than 768px) */
+
   #menu #navBarContainer {
     justify-content: end !important;
   }
@@ -279,58 +517,129 @@ body {
     font-size: 18px !important;
   }
 
+  p#responsiveText2 {
+    font-size: 18px !important;
+  }
+
   div.orderLast {
     order: 2 !important;
   }
+
+  div#containerFrecuency {
+    width: 90% !important;
+  }/* // Small devices (landscape phones, less than 768px) */
+
+  div#containerInvisalign,
+  div#containerItero {
+    width: 94% !important;
+  }
+
+  #containerInvisalign>section {
+    max-height: 100vh;
+  }
+
+  #servicesHome {
+    width: 100% !important;
+    text-align: center;
+  }
+
 }
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  .text-itero {
+    font-size: 20px;
+  }
+
+  .pShort {
+    font-size: 22px;
+  }
+
+  .pMid {
+    font-size: 18px;
+  }
+
+  .pLong {
+    font-size: 16px;
+  }
+
+  .imgLarge {
+    height: 20rem;
+    max-width: 75%;
+    border-radius: 10%;
+  }
+
+  #review {
+    width: 96% !important;
+  }
+
+
+  /* oldssssssssssssssssssssssssssssssssss */
+  .profileImgReview {
+    width: 55% !important;
+  }
+
+  .imgMaxHeight2 {
+    margin-left: 2.5%;
+    max-height: 25rem !important;
+    max-width: 94% !important;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+  }/* // X-Small devices (portrait phones, less than 576px) */
+
+  div#containerFrecuency {
+    width: 94% !important;
+    margin-inline-start: 2rem;
+  }
+
+  div#containerInvisalign,
+  div#containerItero {
+    width: 90% !important;
+  }
+
+  #containerInvisalign>section {
+    max-height: 100vh;
+  }
+
+  .carousel-inner>.carousel-item>img {
+    height: 20rem;
+    width: auto;
+  }
+
+  #servicesHome {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .mapaImg {
+    height: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* DISPOSITIVOS MENORES A 768PX */
+/* @media screen and (max-width:768px) {} */
+
+/* @media screen and (min-width:769px) and (max-width:992px) seria una opcion para segmentar mas los devices*/
+/* DISPOSITIVOS MENORES A 992PX */
+/* @media screen and (max-width:992px) {} */
 
 /* PANTALLA DE ESCRITORIO */
-@media (min-width:993px) {
-  p#responsiveText {
-    font-size: 26px;
-  }
-
-  #responsiveText>li {
-    font-size: 24px;
-  }
-
-  .imgMaxHeight {
-    max-height: 45rem !important;
-    /* display: inline !important; */
-  }
-}
+/* @media (min-width:993px) {} */
 
 /* PANTALLA DE ESCRITORIO HD */
-@media (min-width:1024px) {
+/* @media (min-width:1024px) {} */
 
-  div#containerItero {
-    width: 90% !important;
-  }
-
-  p#responsiveText {
-    font-size: 26px !important;
-  }
-}
-
-@media (min-width:1439px) {
-
-  div#containerItero {
-    width: 90% !important;
-  }
-
-  p#responsiveText {
-    font-size: 32px !important;
-  }
-}
+/* @media (min-width:1439px) {} */
 
 /* PANTALLAS MAYORES A 769PX */
-@media screen and (min-width:769px) {
-  #local {
-    flex-wrap: wrap;
-    padding-top: 20px;
-  }
-
-  .wrapper {
-    padding-top: 70px;
-  }
-}
+/* @media screen and (min-width:769px) {} */

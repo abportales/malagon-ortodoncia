@@ -17,7 +17,7 @@ export const Header = () => {
 
                     <div className="col-lg-2 d-flex justify-content-center" id="hideOnDevice">
                         <NavLink to="/itero">
-                            <img className="pt-3 img-fluid align-self-center"
+                            <img className="pt-3 img-fluid align-self-center imgHead-itero"
                                 src="/assets/img/utilities/logo-itero.png" alt="iTero"
                                 width="130" height="auto" style={{ maxHeight: 100 }} />
                         </NavLink>
@@ -31,8 +31,8 @@ export const Header = () => {
                         </NavLink>
                     </div>
                     <div className="col-lg-3 d-flex justify-content-center" id="hideOnDevice">
-                        <span className="text-white mx-2 fs-1 align-self-center border border-secondary rounded px-2">
-                            CLÍNICA<img className=" img-fluid rounded align-self-center ps-1"
+                        <span className="text-white mx-2 fs-1 align-self-center border border-secondary rounded px-2 titleHead-clinic">
+                            CLÍNICA&nbsp;<img className="img-fluid rounded align-self-center ps-1 imgHead-clinic"
                                 src="/assets/img/utilities/logo-badge-platinum.png" alt="badge-platinum"
                                 width="110" height="auto" />
                         </span >

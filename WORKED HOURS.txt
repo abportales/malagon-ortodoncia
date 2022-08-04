@@ -13,8 +13,8 @@ DOMINGO:
         https://www.youtube.com/watch?v=6qko7Nbe8YA&ab_channel=FalconMasters*/
 
 
-        **** me quede en aboutpage y checar lo de reviws en diferentes screens actual 991
         **** verificar el scroll en home, en pantalla de cel, si hace un offset, posiblemente es el carousel
                 ++mismo error en scroll al bajar a la 2da foto en aboutPage, dim: 768
         **** verificar si cada prop del css se usa en html
         **** meter bien los estilos en img, p.e. imgShort, mid and large
+        ***ver lo de importar fuentes

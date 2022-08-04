@@ -1,17 +1,20 @@
+import { homeImgUrls } from "../../data/homeImgUrls";
 
 export const Carousel = () => {
 
     const speed = 2500;
     const height = 600;
+    const imgUrls = homeImgUrls;
 
     return (
         <>
             <div id="carouselControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner" id="menu">
                     <div className="carousel-item active" data-bs-interval={speed}>
-                        <img src="/assets/img/home/carousel00.jpg" 
+                        {/* <img src="/assets/img/home/carousel00.jpg"  */}
+                        <img src={imgUrls[0].url}
                             className="d-block m-auto w-100 animate__animated animate__pulse animate__delay-1s" 
-                            height={height} alt="carousel00" />
+                            height={height} alt={imgUrls[0].id} />
                     </div>
                     <div className="carousel-item" data-bs-interval={speed}>
                         <img src="/assets/img/home/carousel01.jpg" 

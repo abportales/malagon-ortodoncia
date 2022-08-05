@@ -2,28 +2,33 @@
 
 * {
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   background: #d0d0d0;
   font-size: 18px;
 }
 
-#gradientLU {
+/* #carouselControls{
+  overflow-y: hidden;
+} */
+
+.gradient0A {
   background: linear-gradient(to top left, #003366 0%, #336699 100%);
 }
 
-#gradientRU {
-  background: linear-gradient(to top right, #003366 0%, #336699 100%);
-}
-
-#gradientLB {
+.gradient0B {
   background: linear-gradient(to bottom left, #003366 0%, #336699 100%);
 }
 
-#gradientRB {
+.gradient3A {
+  background: linear-gradient(to top right, #003366 0%, #336699 100%);
+}
+
+.gradient3B {
   background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
 }
 
@@ -61,21 +66,6 @@ body {
 
 #whiteBg {
   background: #d0d0d0;
-}
-
-/* =================================================================================== ANIMATION FOR IMG ZOOM EFFECT*/
-.zoom {
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.zoom img {
-  width: 100%;
-  transition: 0.5s all ease-in-out;
-}
-
-.zoom:hover img {
-  transform: scale(1.15);
 }
 
 /* end test */
@@ -131,7 +121,7 @@ body {
   background-color: lightskyblue;
 }
 
-#titleServicesCard {
+.titleServicesCard {
   color: #414141;
   background-color: lightskyblue;
 }
@@ -148,16 +138,6 @@ body {
   color: #e2bd59;
 }
 
-#textHome {
-  font-size: 20px;
-  color: #414141;
-}
-
-/* largo max q ocupara el carousel */
-.carousel-inner {
-  max-height: 40rem;
-}
-
 #footer {
   background: lightskyblue;
   min-height: 100px;
@@ -167,24 +147,14 @@ body {
   border-radius: 50%;
 }
 
-#cardServices {
-  margin-top: 20px;
+.cardServices {
+  margin-top: 10px;
   border-radius: 5px;
-  background-size: cover;
   box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
 }
 
-#content-servicesItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.4);
-  /* opacity: 0;
-  transition: .5s; */
-}
-
-#mapaImg {
+#maps>iframe {
+  height: 480px !important;
   box-shadow: 1px 3px 3px 1px rgba(3, 32, 51, .8);
 }
 
@@ -194,68 +164,69 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
 /* contenedor */
 .container-patients {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 40px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
 
-	/* Grid */
+  /* Grid */
   display: grid;
-  /* una columna de la fraccion y otra igual (50%) */
-  grid-template-columns: 1fr 3fr; 
-  /* separacion interne entre elementos */
+  /* una columna de fraccion  25/75*/
+  grid-template-columns: 1fr 3fr;
+  /* separacion interna entre elementos */
   gap: 10px;
 }
 
 .container-patients2 {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 40px 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
 
-	/* Grid */
+  /* Grid */
   display: grid;
   /* una columna de la fraccion y otra igual (50%) */
-  grid-template-columns: 3fr 1fr; 
+  grid-template-columns: 3fr 1fr;
   /* separacion interne entre elementos */
   gap: 10px;
 }
 
 .titulo {
-	font-size: 24px;
-	padding: 20px 0;
+  font-size: 24px;
+  padding: 20px 0;
 }
 
 /* .contenedor-conciertos { */
 .gallery {
-	display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .card {
-	border-radius: 10px;
-	min-height: 200px;
-	font-weight: bold;
-	padding: 20px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center center;
 }
 
 .card .textos {
-	height: 100%;
+  height: 100%;
 }
 
 .banner {
-	border-radius: 10px;
-	/* text-align: center; */
-	/* padding: 10px; */
-	background-size: cover;
-	background-position: center center;
+  border-radius: 10px;
+  /* text-align: center; */
+  /* padding: 10px; */
+  background-size: cover;
+  background-position: center center;
 
   display: grid;
   grid-template-rows: 1fr;
@@ -298,7 +269,48 @@ body {
 }
 
 .pShort {
-  font-size: 34px;
+  font-size: 1.7em;
+  text-align: start !important;
+  padding: 20px;
+
+}
+
+.titleHead-clinic {
+  font-size: 2.3em;
+}
+
+.conVideo {
+  width: 720px;
+  height: 480px;
+  float: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.conVideo>iFrame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.profileImgReview {
+  width: 25%;
+}
+
+.container-invisalign,
+.container-about {
+  overflow-x: hidden;
+}
+
+.container-about>div>.contSectionType>div>span {
+  font-size: 2.5vw;
+}
+
+.container-invisalign>div>.contSectionType>div>span {
+  font-size: 2.2vw;
+}
+.container-invisalign>div>.contSectionType>.zoom {
+  align-self: center !important;
 }
 
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
@@ -307,6 +319,7 @@ body {
 
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+
   .text-itero {
     font-size: 34px;
   }
@@ -317,6 +330,14 @@ body {
 
   .pLong {
     font-size: 18px;
+  }
+
+  .titleHead-clinic {
+    font-size: 1.8em;
+  }
+
+  .imgHead-clinic {
+    width: 90px !important;
   }
 
   /* oldssssssssssssssssssssssssssssssssss */
@@ -347,13 +368,12 @@ body {
 
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
-  .titleHead-clinic {
-    font-size: 25px !important;
+  .imgResponsiveLong {
+    max-width: 80%;
   }
 
-  .pShort {
-    font-size: 26px;
+  .titleHead-clinic {
+    font-size: 1.2em;
   }
 
   .text-itero {
@@ -361,19 +381,22 @@ body {
   }
 
   /* oldssssssssssssssssssssssssssssssssss */
-  .imgHead-itero,
-  .imgHead-clinic {
+  .imgHead-itero {
     width: 100px !important;
-    /* height: 0px !important; */
   }
 
 
   div#containerItero {
     width: 90% !important;
   }
-/* // Large devices (desktops, less than 1200px) */
+
+  /* // Large devices (desktops, less than 1200px) */
   .review {
     width: 75% !important;
+  }
+
+  .profileImgReview {
+    width: 25% !important;
   }
 
   p#responsiveText {
@@ -396,11 +419,33 @@ body {
   p#responsiveText {
     font-size: 26px !important;
   }
+
+  .imgResponsive {
+    width: 85%;
+  }
 }
 
-/* // Medium devices (tablets, less than 992px) */
+/******************************************************** Medium devices (tablets, less than 992px) ***********************************************/
 @media (max-width: 991.98px) {
-  #review {
+
+  .contSectionType>div {
+    flex-direction: row;
+  }
+
+  .imgResponsive {
+    width: 75%;
+  }
+
+  .servicesHome {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .imgCarousel {
+    height: 360px !important;
+  }
+
+  .review {
     width: 75% !important;
   }
 
@@ -425,13 +470,18 @@ body {
     border-radius: 10%;
   }
 
+  .conTextHome {
+    width: 92% !important;
+    text-align: center;
+  }
+
+  .conTextHome>p {
+    width: 100% !important;
+  }
+
   /* oldssssssssssssssssssssssssssssssssss */
   #menu #navBarContainer {
     justify-content: end !important;
-  }
-
-  .zoom img {
-    width: 60%;
   }
 
   #hideOnDesktop {
@@ -444,7 +494,9 @@ body {
 
   p#responsiveText {
     font-size: 20px !important;
-  }/* // Medium devices (tablets, less than 992px) */
+  }
+
+  /* // Medium devices (tablets, less than 992px) */
 
   #responsiveText>li {
     font-size: 18px !important;
@@ -454,41 +506,69 @@ body {
     font-size: 18px !important;
   }
 
-  div.orderLast {
-    order: 2 !important;
-  }
-
   div#containerItero {
     width: 96% !important;
   }
 }
 
-/* // Small devices (landscape phones, less than 768px) */
+/******************************************** Small devices (landscape phones, less than 768px) **********************************************/
 @media (max-width: 767.98px) {
-  div.review {
-    width: 75% !important;
+
+  .orderLast {
+    order: 2 !important;
   }
 
-  .zoom img {
-    width: 100%;
+  .contSectionType {
+    flex-direction: column;
+    width: 90%;
   }
-  
+
+  .contSectionType>div>span {
+    font-size: 5vw;
+  }
+
+  .imgResponsive {
+    border-radius: 10%;
+  }
+
+
+  .review {
+    width: 94% !important;
+  }
+
+  .profileImgReview {
+    width: 50% !important;
+    height: 70% !important;
+  }
+
+  .cardReview {
+    flex-direction: column !important;
+  }
+
+  .cardReview>.content {
+    height: fit-content !important;
+  }
+
+  .conVideo {
+    width: 480px;
+    height: 320px;
+  }
+
   .imgShort {
     height: 15rem;
     width: 50% !important;
     border-radius: 10%;
   }
 
-  /* oldssssssssssssssssssssssssssssssssss */
-  #textHome {
-    width: 90% !important;
+  .maps {
+    flex-direction: column !important;
   }
 
-  /* #wrapper {
-    width: 70%;
-    padding-top: 20px;
-    margin-left: 20%;
-  } */
+  .maps>div {
+    margin-top: 10px;
+  }
+
+  /* oldssssssssssssssssssssssssssssssssss */
 
   .imgMaxHeight2 {
     max-height: 30rem !important;
@@ -497,7 +577,9 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 10%;
-  }/* // Small devices (landscape phones, less than 768px) */
+  }
+
+  /* // Small devices (landscape phones, less than 768px) */
 
   #menu #navBarContainer {
     justify-content: end !important;
@@ -523,13 +605,11 @@ body {
     font-size: 18px !important;
   }
 
-  div.orderLast {
-    order: 2 !important;
-  }
-
   div#containerFrecuency {
     width: 90% !important;
-  }/* // Small devices (landscape phones, less than 768px) */
+  }
+
+  /* // Small devices (landscape phones, less than 768px) */
 
   div#containerInvisalign,
   div#containerItero {
@@ -554,10 +634,6 @@ body {
     font-size: 20px;
   }
 
-  .pShort {
-    font-size: 22px;
-  }
-
   .pMid {
     font-size: 18px;
   }
@@ -572,14 +648,14 @@ body {
     border-radius: 10%;
   }
 
-  #review {
+  .review {
     width: 96% !important;
   }
 
 
   /* oldssssssssssssssssssssssssssssssssss */
   .profileImgReview {
-    width: 55% !important;
+    height: 55% !important;
   }
 
   .imgMaxHeight2 {
@@ -589,7 +665,9 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 10%;
-  }/* // X-Small devices (portrait phones, less than 576px) */
+  }
+
+  /* // X-Small devices (portrait phones, less than 576px) */
 
   div#containerFrecuency {
     width: 94% !important;
@@ -605,9 +683,9 @@ body {
     max-height: 100vh;
   }
 
-  .carousel-inner>.carousel-item>img {
-    height: 20rem;
-    width: auto;
+  .carousel-inner {
+    height: 20em !important;
+    /* width: auto; */
   }
 
   #servicesHome {
@@ -615,12 +693,31 @@ body {
     text-align: center;
   }
 
-  .mapaImg {
-    height: 250px;
+  .maps>iframe {
+    height: 250px !important;
   }
 }
 
+/* ==================================================just for > lap screen====================== ANIMATION FOR IMG ZOOM EFFECT*/
+@media screen and (min-width:1024px) {
+  .zoom {
+    overflow: hidden;
+    margin: 0 auto;
+  }
 
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .zoom:hover img {
+    transform: scale(1.15);
+  }
+
+  .container-invisalign > div {
+    height: 100vh;
+  }
+}
 
 
 

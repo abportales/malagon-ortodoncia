@@ -1,4 +1,4 @@
-export const homeImgUrls = [
+export const patientsImgUrls = [
     {
         id: '000',       
         url: "https://firebasestorage.googleapis.com/v0/b/malagon-ortodoncia.appspot.com/o/patients%2F000.jpg?alt=media&token=dc67ee32-41e4-4066-908f-b4a22a293bc1",
@@ -26,9 +26,10 @@ export const homeImgUrls = [
     {
         id: '006',       
         url: "https://firebasestorage.googleapis.com/v0/b/malagon-ortodoncia.appspot.com/o/patients%2F006.jpg?alt=media&token=6e2ae62d-de6e-497f-ba5b-28f72adc5560",
-    },
-    {
-        id: 'banner',       
-        url: "https://firebasestorage.googleapis.com/v0/b/malagon-ortodoncia.appspot.com/o/patients%2Fbanner.jpg?alt=media&token=bfddb845-436e-42a1-973a-5386f665ac7b",
     }
 ]
+
+export const bannerImgUrl = {
+    id: 'banner',       
+    url: "https://firebasestorage.googleapis.com/v0/b/malagon-ortodoncia.appspot.com/o/patients%2Fbanner.jpg?alt=media&token=bfddb845-436e-42a1-973a-5386f665ac7b",
+};

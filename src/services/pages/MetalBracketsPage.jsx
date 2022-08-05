@@ -3,25 +3,34 @@ export const MetalBracketsPage = () => {
 
   return (
     <>
-      <div id="display-1" style={{ height: '100vh' }}>
-        <h1>MetalBracketsPage</h1>
-        <img src="/assets/img/utilities/underConstruction.jpg" alt="" className='img-fluid p-1' style={{ maxHeight: '300px' }} />
+      
+      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+        <ol className="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="d-block w-100" src="..." alt="First slide"/>
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="..." alt="Second slide"/>
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="..." alt="Third slide"/>
+          </div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
       </div>
 
-      <div style={{ height: '100vh' }}>
-        <h1 id="display-1">MetalBracketsPage</h1>
-        <img src="/assets/img/utilities/underConstruction.jpg" alt="" className='img-fluid p-1' style={{ maxHeight: '300px' }} />
-      </div>
-
-      <div style={{ height: '100vh' }}>
-        <h1 >MetalBracketsPage</h1>
-        <img id="display-1" src="/assets/img/utilities/underConstruction.jpg" alt="" className='img-fluid p-1' style={{ maxHeight: '300px' }} />
-      </div>
-
-      <div style={{ height: '100vh' }}>
-        <h1 id="display-1">MetalBracketsPage</h1>
-        <img id="display-1" src="/assets/img/utilities/underConstruction.jpg" alt="" className='img-fluid p-1' style={{ maxHeight: '300px' }} />
-      </div>
     </>
   )
 }

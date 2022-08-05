@@ -1,49 +1,46 @@
-import { homeImgUrls } from "../../data/homeImgUrls";
 
 export const Carousel = () => {
 
     const speed = 2500;
-    const height = 600;
-    const imgUrls = homeImgUrls;
 
     return (
         <>
             <div id="carouselControls" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner" id="menu">
+                <div className="carousel-inner bgDark">
                     <div className="carousel-item active" data-bs-interval={speed}>
-                        {/* <img src="/assets/img/home/carousel00.jpg"  */}
-                        <img src={imgUrls[0].url}
-                            className="d-block m-auto w-100 animate__animated animate__pulse animate__delay-1s" 
-                            height={height} alt={imgUrls[0].id} />
+                        <img src="/assets/img/home/carousel00.jpg" 
+                            className="d-block w-100 m-auto animate__animated animate__pulse animate__delay-1s imgCarousel" 
+                            height="500"
+                            alt="carousel00" />
                     </div>
                     <div className="carousel-item" data-bs-interval={speed}>
                         <img src="/assets/img/home/carousel01.jpg" 
-                            className="d-block w-40 m-auto animate__animated animate__pulse animate__delay-1s" 
-                            height={height}
+                            className="d-block w-40 m-auto animate__animated animate__pulse animate__delay-1s imgCarousel" 
+                            height="500"
                             alt="carousel01" />
                     </div>
                     <div className="carousel-item" data-bs-interval={speed}>
                         <img src="/assets/img/home/carousel02.jpg" 
-                            className="d-block m-auto w-70 animate__animated animate__pulse animate__delay-1s" 
-                            height={height}
+                            className="d-block m-auto w-70 animate__animated animate__pulse animate__delay-1s imgCarousel" 
+                            height="500"
                             alt="carousel02" />
                     </div>
                     <div className="carousel-item" data-bs-interval={speed}>
                         <img src="/assets/img/home/carousel03.jpg" 
-                            className="d-block m-auto w-50 animate__animated animate__pulse animate__delay-1s"
-                            height={height}
+                            className="d-block m-auto w-40 animate__animated animate__pulse animate__delay-1s imgCarousel"
+                            height="500"
                             alt="carousel03" />
                     </div>
                     <div className="carousel-item" data-bs-interval={speed}>
                         <img src="/assets/img/home/carousel04.jpg" 
-                            className="d-block m-auto w-40 animate__animated animate__pulse animate__delay-1s"
-                            height={height}
+                            className="d-block m-auto w-40 animate__animated animate__pulse animate__delay-1s imgCarousel"
+                            height="500"
                             alt="carousel04" />
                     </div>
                     <div className="carousel-item" data-bs-interval={speed}>
                         <img src="/assets/img/home/carousel05.jpg" 
-                            className="d-block m-auto w-40 animate__animated animate__pulse animate__delay-1s" 
-                            height={height}
+                            className="d-block m-auto w-40 animate__animated animate__pulse animate__delay-1s imgCarousel" 
+                            height="500"
                             alt="carousel05" />
                     </div>
                 </div>

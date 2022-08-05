@@ -12,9 +12,35 @@ DOMINGO:
         https://www.youtube.com/watch?v=Z5MoBm99w1Q&ab_channel=SLeeDw
         https://www.youtube.com/watch?v=6qko7Nbe8YA&ab_channel=FalconMasters*/
 
+***me quede en ajustar font de invisalign
 
-        **** verificar el scroll en home, en pantalla de cel, si hace un offset, posiblemente es el carousel
+        **** verificar el scroll en 
                 ++mismo error en scroll al bajar a la 2da foto en aboutPage, dim: 768
         **** verificar si cada prop del css se usa en html
-        **** meter bien los estilos en img, p.e. imgShort, mid and large
         ***ver lo de importar fuentes
+        ***agregar el video de la entrevista en invisalign
+        *** no se me olvide ponerle borde al info de invis y supongo q a todos los de brackets
+        *** poner  SmartTrack®, SmartForce® y SmartStage® con ventana modal
+        *** centrar imagen, buscar como
+
+
+
+/*************************************************debe ser el contenedor padre directo del los divs q tienen las col-xx-x
+estaba poniendo el abuelo, y aunq si pongo display none lo borra no era el indicado
+@media (max-width: 767.98px) {
+
+  .contSectionType > div {
+    /* flex: none; */
+    /* flex-wrap: initial !important; */
+    flex-direction: column;
+  }
+
+
+ <div className={`contSectionType d-flex justify-content-center ${bgColor}`}  >
+        <div className='d-flex justify-content-center'>
+                {
+                (!imgRight) &&  img
+                }
+                <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center' data-aos={(imgRight) ? 'fade-right' : 'fade-left'}>
+                <h1 className='text-center titleColor2'>{ title }</h1>
+                {

@@ -31,7 +31,7 @@ export const Header = () => {
                         </NavLink>
                     </div>
                     <div className="col-lg-3 d-flex justify-content-center" id="hideOnDevice">
-                        <span className="text-white mx-2 fs-1 align-self-center border border-secondary rounded px-2 titleHead-clinic">
+                        <span className="text-white mx-2 align-self-center border border-secondary rounded px-2 titleHead-clinic">
                             CLÍNICA&nbsp;<img className="img-fluid rounded align-self-center ps-1 imgHead-clinic"
                                 src="/assets/img/utilities/logo-badge-platinum.png" alt="badge-platinum"
                                 width="110" height="auto" />

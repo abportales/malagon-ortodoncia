@@ -1,18 +1,63 @@
 import { TopFooter } from '../ui/components/TopFooter'
 import AOS from 'aos'
+import { invisalign } from '../data/invisalign'
+import { SectionType1 } from '../components/generics/sectionType1'
 
 export const InvisalignPage = () => {
-  AOS.init({ 
-    duration: 1000, 
+  AOS.init({
+    duration: 1000,
     mirror: false,
     easing: 'ease',
-   }) // values from 0 to 3000, with step 50ms)
-   
+  }) // values from 0 to 3000, with step 50ms)
+
   const url = "https://providerbio-latam.invisalign.com/sv/1252996#start"
+
+  const data = invisalign;
 
   return (
     <>
-      <div className="container-fluid w-100" id="containerInvisalign">
+      <div className="container-invisalign">
+        {
+          data.map((section) => (
+            <SectionType1 key={section.id} {...section} />
+          ))
+        }
+
+        <div className='d-flex justify-content-center gradient3B'>
+          <div className='contSectionType d-flex justify-content-center'>
+            <div className='col-lg-6 col-md-6 col-sm-12 zoom orderLast' data-aos="fade-left">
+              <a href={url} className='text-info' target="_blank">
+                <img className='img-fluid imgResponsive d-block m-auto '
+                  src="/assets/img/invisalign/00alineadorinvisalign.jpg"
+                  style={{ maxWidth: '840px', maxHeight: '720px' }}
+                  alt="00alineadorinvisalign" />
+              </a>
+            </div>
+            <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center'
+              data-aos='fade-right'>
+              <h1 className='text-center titleColor2'>¡Invisalign SmileView simula su nueva sonrisa!</h1>
+              <p className='text-white px-4 pShort'>
+                Tómate una selfie sonriendo y te mostramos lo que un tratamiento Invisalign puede hacer por ti.&nbsp;
+                <a href={url} className='text-info' target="_blank">
+                  Clic aqui.
+                </a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <TopFooter bgColor={'gradient3A'} />
+
+    </>
+  )
+}
+
+
+
+/**
+ * 
+ * <div className="container-fluid w-100" id="containerInvisalign">
 
         <section className='row' id='gradientRU'>
           <div className='col-lg-6 col-md-12 d-flex px-3 pt-2' data-aos="fade-up-left">
@@ -84,33 +129,5 @@ export const InvisalignPage = () => {
             </div>
           </div>
         </section>
+// </div> */
 
-        <section className='row' id='gradientRU'>
-          <div className='col-lg-6 col-md-12 d-flex px-3' data-aos="zoom-in">
-            <div className=' border rounded align-self-center' >
-              <h1 className='text-center titleColor2'>
-                ¡Invisalign SmileView simula su nueva sonrisa!
-              </h1>
-              <p className='text-white px-4 pShort'>
-                Tómate una selfie sonriendo y te mostramos lo que un tratamiento Invisalign puede hacer por ti.&nbsp;
-                <a href={url} className='text-info' target="_blank">
-                  Clic aqui.
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className='col-lg-6 col-md-12 zoom d-flex justify-content-center' data-aos="zoom-in">
-            {/* <a href={url} className='text-info' target="_blank"> */}
-              <img className='img-fluid imgMaxHeight2 align-self-center' 
-                    src="/assets/img/invisalign/00alineadorinvisalign.jpg" 
-                    alt="00alineadorinvisalign" />
-            {/* </a> */}
-          </div>
-        </section>
-
-      </div>
-      <TopFooter bgColor={'gradientRB'} />
-
-    </>
-  )
-}

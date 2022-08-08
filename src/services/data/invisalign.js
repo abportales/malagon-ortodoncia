@@ -16,7 +16,7 @@ export const invisalign = [
             },
         ],
         path: '/assets/img/invisalign/00aligner.gif',
-        width: '960px',
+        width: '840px',
         height: '840px',
     },
     {
@@ -36,8 +36,8 @@ export const invisalign = [
             },
         ],
         path: '/assets/img/invisalign/01alineadorinvisalign.jpg',
-        width: '960px',
-        height: '7200px',
+        width: '840px',
+        height: '600px',
     },
     {
         id: 'invisalign02',
@@ -56,7 +56,7 @@ export const invisalign = [
             },
         ],
         path: '/assets/img/invisalign/02alineadorinvisalign.jpg',
-        width: '960px',
-        height: '840px',
+        width: '840px',
+        height: '720px',
     },
 ]

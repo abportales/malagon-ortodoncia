@@ -32,7 +32,7 @@ body {
   background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
 }
 
-#gradient1A {
+.gradient1A {
   background: linear-gradient(to top left, #0099cc 0%, #003366 100%);
 }
 
@@ -40,7 +40,7 @@ body {
   background: linear-gradient(to top right, #0099cc 0%, #003366 100%);
 }
 
-#gradient1C {
+.gradient1B {
   background: linear-gradient(to bottom left, #0099cc 0%, #003366 100%);
 }
 
@@ -48,11 +48,11 @@ body {
   background: linear-gradient(to bottom right, #0099cc 0%, #003366 100%);
 }
 
-#gradient2A {
+.gradient2A {
   background: linear-gradient(to bottom, #003366 0%, #669999 100%);
 }
 
-#gradient2B {
+.gradient2B {
   background: linear-gradient(to top, #003366 0%, #669999 100%);
 }
 
@@ -64,7 +64,7 @@ body {
   background: #313131;
 }
 
-#whiteBg {
+.bgWhite {
   background: #d0d0d0;
 }
 
@@ -246,35 +246,6 @@ body {
   height: 100vh;
 }
 
-#containerInvisalign>section,
-#containerItero>section {
-  height: 100vh;
-}
-
-.pMid {
-  font-size: 30px;
-}
-
-.pLong {
-  font-size: 26px;
-}
-
-.imgMaxHeight {
-  max-height: 45rem;
-}
-
-.imgLarge {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.pShort {
-  font-size: 1.7em;
-  text-align: start !important;
-  padding: 20px;
-
-}
-
 .titleHead-clinic {
   font-size: 2.3em;
 }
@@ -298,19 +269,59 @@ body {
 }
 
 .container-invisalign,
+.container-itero,
+.container-frequency,
 .container-about {
   overflow-x: hidden;
 }
 
-.container-about>div>.contSectionType>div>span {
+.container-frequency>div {
+  width: 98%;
+  margin-inline-start: 1%;
+  padding-bottom: 2rem;
+  border-bottom: 10px solid #313131;
+  border-radius: 40px;
+}
+
+.container-itero>div>.contSectionType>div>.contText,
+.container-frequency>div>.contSectionType>div>.contText,
+.container-about>div>.contSectionType>div>.contText {
+  text-align: start;
+  padding: 3%;
+  margin: 10px;
+}
+
+.contSectionType>div>h1 {
+  margin-top: 10px;
+  font-size: 3.5vw;
+}
+
+.container-itero>div>.contSectionType>div>.contText>.spanResponsive,
+.container-about>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2.5vw;
 }
 
-.container-invisalign>div>.contSectionType>div>span {
+.contTextSpecial>span,
+.container-invisalign>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2.2vw;
 }
-.container-invisalign>div>.contSectionType>.zoom {
-  align-self: center !important;
+
+.container-frequency>div>.contSectionType>div>.contText>.spanResponsive {
+  font-size: 2vw;
+}
+
+.contTextSpecial,
+.container-invisalign>div>.contSectionType>div>.contText {
+  text-align: justify;
+  padding: 3%;
+  margin: 10px;
+  border-style: dotted;
+  border-color: white;
+}
+
+.container-frequency>div>.contSectionType>div>.contText>.spanResponsive {
+  text-align: justify;
+  margin: 5px;
 }
 
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
@@ -324,14 +335,6 @@ body {
     font-size: 34px;
   }
 
-  .pMid {
-    font-size: 22px;
-  }
-
-  .pLong {
-    font-size: 18px;
-  }
-
   .titleHead-clinic {
     font-size: 1.8em;
   }
@@ -341,37 +344,14 @@ body {
   }
 
   /* oldssssssssssssssssssssssssssssssssss */
-  p#responsiveText {
-    font-size: 26px;
-  }
-
-  #responsiveText>li {
-    font-size: 24px;
-  }
-
-  p#responsiveText2 {
-    font-size: 24px !important;
-  }
 
   div#containerItero {
     width: 90% !important;
-  }
-
-  p#responsiveText {
-    font-size: 32px !important;
-  }
-
-  p#responsiveText2 {
-    font-size: 28px !important;
   }
 }
 
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .imgResponsiveLong {
-    max-width: 80%;
-  }
-
   .titleHead-clinic {
     font-size: 1.2em;
   }
@@ -399,41 +379,28 @@ body {
     width: 25% !important;
   }
 
-  p#responsiveText {
-    font-size: 26px;
-  }
-
-  #responsiveText>li {
-    font-size: 24px;
-  }
-
-  p#responsiveText2 {
-    font-size: 24px !important;
-  }
 
   .imgMaxHeight {
     max-height: 45rem !important;
     /* display: inline !important; */
   }
 
-  p#responsiveText {
-    font-size: 26px !important;
-  }
-
   .imgResponsive {
-    width: 85%;
+    width: 85% !important;
+    height: auto !important;
   }
 }
 
 /******************************************************** Medium devices (tablets, less than 992px) ***********************************************/
 @media (max-width: 991.98px) {
 
-  .contSectionType>div {
+  .contSectionType>div>.contText {
     flex-direction: row;
   }
 
   .imgResponsive {
-    width: 75%;
+    width: 75% !important;
+    border-radius: 10%;
   }
 
   .servicesHome {
@@ -447,12 +414,6 @@ body {
 
   .review {
     width: 75% !important;
-  }
-
-  .imgLarge {
-    height: 25rem;
-    max-width: 75%;
-    border-radius: 10%;
   }
 
   .imgShort {
@@ -492,27 +453,38 @@ body {
     display: none !important;
   }
 
-  p#responsiveText {
-    font-size: 20px !important;
-  }
-
   /* // Medium devices (tablets, less than 992px) */
-
-  #responsiveText>li {
-    font-size: 18px !important;
-  }
-
-  p#responsiveText2 {
-    font-size: 18px !important;
-  }
-
-  div#containerItero {
-    width: 96% !important;
-  }
 }
 
 /******************************************** Small devices (landscape phones, less than 768px) **********************************************/
 @media (max-width: 767.98px) {
+
+  .container-frequency>div>.contSectionType>div>.contText>.spanResponsive {
+    font-size: 3.7vw;
+  }
+
+  .contSectionType>div>h1 {
+    margin-top: 10px;
+    font-size: 5vw;
+  }
+
+  .container-itero>div>.contSectionType>div>.contText>.spanResponsive,
+  .container-about>div>.contSectionType>div>.contText>.spanResponsive {
+    font-size: 4.5vw;
+  }
+
+  .contTextSpecial>span,
+  .container-invisalign>div>.contSectionType>div>.contText>.spanResponsive {
+    font-size: 3.8vw;
+    text-align: justify !important;
+  }
+
+  .contTextSpecial>h1,
+  .container-invisalign>div>.contSectionType>div>.contText>h1 {
+    margin-top: 3rem;
+    text-align: center !important;
+    /* display: none; */
+  }
 
   .orderLast {
     order: 2 !important;
@@ -523,14 +495,9 @@ body {
     width: 90%;
   }
 
-  .contSectionType>div>span {
+  .contSectionType>div>.contText>.spanResponsive {
     font-size: 5vw;
   }
-
-  .imgResponsive {
-    border-radius: 10%;
-  }
-
 
   .review {
     width: 94% !important;
@@ -568,17 +535,6 @@ body {
     margin-top: 10px;
   }
 
-  /* oldssssssssssssssssssssssssssssssssss */
-
-  .imgMaxHeight2 {
-    max-height: 30rem !important;
-    max-width: 35rem;
-    margin-left: 2.5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 10%;
-  }
-
   /* // Small devices (landscape phones, less than 768px) */
 
   #menu #navBarContainer {
@@ -591,18 +547,6 @@ body {
 
   div#hideOnDevice {
     display: none !important;
-  }
-
-  p#responsiveText {
-    font-size: 20px !important;
-  }
-
-  #responsiveText>li {
-    font-size: 18px !important;
-  }
-
-  p#responsiveText2 {
-    font-size: 18px !important;
   }
 
   div#containerFrecuency {
@@ -632,20 +576,6 @@ body {
 
   .text-itero {
     font-size: 20px;
-  }
-
-  .pMid {
-    font-size: 18px;
-  }
-
-  .pLong {
-    font-size: 16px;
-  }
-
-  .imgLarge {
-    height: 20rem;
-    max-width: 75%;
-    border-radius: 10%;
   }
 
   .review {
@@ -714,7 +644,12 @@ body {
     transform: scale(1.15);
   }
 
-  .container-invisalign > div {
+  .container-itero>div,
+  .container-invisalign>div {
+    height: 100vh;
+  }
+
+  .container-frequency>div {
     height: 100vh;
   }
 }

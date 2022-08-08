@@ -20,8 +20,8 @@ export const about = [
             }
         ],
         path: '/assets/img/aboutus/00aboutus.jpg',
-        width: '840px',
-        height: '1080px',
+        width: '720px',
+        height: '840px',
     },
     {
         id: 'about01',

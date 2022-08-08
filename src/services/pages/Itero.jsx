@@ -1,17 +1,30 @@
-import Aos from "aos"
+import { SectionType1 } from "../components/generics/SectionType1"
+import { itero } from "../data/itero"
 import { TopFooter } from "../ui/components/TopFooter"
 
 export const Itero = () => {
 
-    Aos.init({
-        duration:1000,
-        mirror: true,
-        easing: 'ease',
-    });
+    const data = itero;
 
     return (
         <>
-            <div id="darkBackground">
+            <div className="container-itero">
+                {
+                    data.map((section) => (
+                        <SectionType1 key={section.id} {...section} />
+                    ))
+                }
+            </div>
+            <TopFooter bgColor={'gradient2B'} />
+        </>
+    )
+}
+
+
+{
+    /**
+     * 
+     *  <div id="darkBackground">
                 <div className="container-fluid w-75" id="containerItero">
 
                     <section className='row' id='gradient2A' >
@@ -67,7 +80,6 @@ export const Itero = () => {
                 </div>
 
             </div>
-            <TopFooter bgColor={'darkBackground'} />
-        </>
-    )
+     * 
+     */
 }

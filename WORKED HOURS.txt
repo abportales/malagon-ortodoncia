@@ -7,6 +7,7 @@ VIERNES:
 SABADO:        
 DOMINGO:    
 
+&nbsp;
 
 /* TODO: CHECK https://www.youtube.com/watch?v=KMPjYXpBYvU&ab_channel=MagtimusPro FOR IMAGES OF FB 
         https://www.youtube.com/watch?v=Z5MoBm99w1Q&ab_channel=SLeeDw
@@ -23,6 +24,13 @@ DOMINGO:
         *** poner  SmartTrack®, SmartForce® y SmartStage® con ventana modal
         *** centrar imagen, buscar como
 
+
+/* poner en frequency
+
+  div#containerFrecuency {
+    width: 94% !important;
+    margin-inline-start: 2rem;
+  }
 
 
 /*************************************************debe ser el contenedor padre directo del los divs q tienen las col-xx-x

@@ -16,7 +16,7 @@ export const FrequencyQuestions = () => {
                     ))
                 }
             </div>
-            <TopFooter bgColor={'gradient1A'} />
+            <TopFooter bgColor={'bgDark'} />
         </>
     )
 }

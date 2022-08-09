@@ -10,7 +10,7 @@ export const AboutPage = () => {
   return (
     <>
 
-      <div className="container-about">
+      <div className="container-about bgDark">
       {
         data.map( (section) => (
           <SectionType1 key={section.id} {...section}/>
@@ -18,8 +18,8 @@ export const AboutPage = () => {
       }
       </div>
       
-      <Reviews bgColor={'gradient0A'} />
-      <TopFooter bgColor={'gradient0B'} />
+      <Reviews bgColor={'bgDark'} />
+      <TopFooter bgColor={'bgDark'} />
     </>
   )
 }

@@ -8,14 +8,14 @@ export const Itero = () => {
 
     return (
         <>
-            <div className="container-itero">
+            <div className="container-itero bgDark">
                 {
                     data.map((section) => (
                         <SectionType1 key={section.id} {...section} />
                     ))
                 }
             </div>
-            <TopFooter bgColor={'gradient2B'} />
+            <TopFooter bgColor={'bgDark'} />
         </>
     )
 }

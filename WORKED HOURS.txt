@@ -13,17 +13,9 @@ DOMINGO:
         https://www.youtube.com/watch?v=Z5MoBm99w1Q&ab_channel=SLeeDw
         https://www.youtube.com/watch?v=6qko7Nbe8YA&ab_channel=FalconMasters*/
 
-***me quede en ajustar font de invisalign
-
-        **** verificar el scroll en 
-                ++mismo error en scroll al bajar a la 2da foto en aboutPage, dim: 768
         **** verificar si cada prop del css se usa en html
         ***ver lo de importar fuentes
-        ***agregar el video de la entrevista en invisalign
-        *** no se me olvide ponerle borde al info de invis y supongo q a todos los de brackets
         *** poner  SmartTrack®, SmartForce® y SmartStage® con ventana modal
-        *** centrar imagen, buscar como
-
 
 /* poner en frequency
 

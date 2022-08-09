@@ -1,6 +1,6 @@
 export * from './AboutPage'
 export * from './ContactUs'
-export * from './DamonqPage'
+export * from './EmpowerBrackets'
 export * from './FrequencyQuestions'
 export * from './HomePage'
 export * from './InvisalignPage'

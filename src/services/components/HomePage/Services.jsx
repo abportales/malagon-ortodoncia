@@ -8,7 +8,7 @@ export const Services = () => {
     return (
         <>
             <div className="container-fluid p-5">
-                <div className="d-flex justify-content-center gap-5 p-3 servicesHome" >
+                <div className="d-flex justify-content-center align-items-baseline align-items-stretch gap-5 p-3 servicesHome" >
                     {
                         services.map((service) => (
                             <ServiceItem key={service.id} {...service} />

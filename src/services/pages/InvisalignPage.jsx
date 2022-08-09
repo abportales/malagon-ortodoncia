@@ -16,7 +16,7 @@ export const InvisalignPage = () => {
 
   return (
     <>
-      <div className="container-invisalign">
+      <div className="container-invisalign gradient3B">
         {
           data.map((section) => (
             <SectionType1 key={section.id} {...section} />
@@ -45,6 +45,15 @@ export const InvisalignPage = () => {
             </div>
           </div>
         </div>
+      
+
+      <section className='container-fluid conVideo my-3' >
+        <iframe className='d-flex' src="https://www.youtube.com/embed/Vp5MAB9uSPU"
+          title="Entrevista de Canal 7 a Malagón Ortodoncia sobre Invisalign"
+          frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen>
+        </iframe>
+      </section>
       </div>
       <TopFooter bgColor={'gradient3A'} />
 

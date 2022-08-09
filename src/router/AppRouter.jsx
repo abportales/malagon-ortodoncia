@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 
-import { HomePage, AboutPage, ContactUs, FrequencyQuestions, Patients, InvisalignPage, DamonqPage, MetalBracketsPage, Itero } from "../services/pages"
+import { HomePage, AboutPage, ContactUs, FrequencyQuestions, Patients, InvisalignPage, MetalBracketsPage, Itero, EmpowerBrackets } from "../services/pages"
 
 export const AppRouter = () => {
     return (
@@ -13,7 +13,7 @@ export const AppRouter = () => {
                 <Route path="frequency" element={<FrequencyQuestions />} />
                 <Route path="patients" element={<Patients />} />
                 <Route path="invisalign" element={<InvisalignPage />} />
-                <Route path="damonq" element={<DamonqPage />} />
+                <Route path="empowerbrackets" element={<EmpowerBrackets />} />
                 <Route path="metalbrackets" element={<MetalBracketsPage />} />
                 
                 <Route path="*" element={<Navigate to="/" />} />

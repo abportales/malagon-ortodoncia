@@ -12,8 +12,8 @@ export const itero = [
             },
         ],
         path: '/assets/img/itero/01itero.jpg',
-        width: '840px',
-        height: '640px',
+        width: '780px',
+        height: '580px',
     },
     {
         id: 'itero01',
@@ -28,7 +28,7 @@ export const itero = [
             },
         ],
         path: '/assets/img/itero/00itero.jpg',
-        width: '840px',
+        width: '780px',
         height: '720px',
     },
     {
@@ -44,7 +44,7 @@ export const itero = [
             },
         ],
         path: '/assets/img/itero/iteroVideo.gif',
-        width: '1040px',
-        height: '1040px',
+        width: '780px',
+        height: '780px',
     },
 ]

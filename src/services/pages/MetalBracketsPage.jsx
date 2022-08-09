@@ -1,36 +1,35 @@
+import Aos from "aos";
+import { SectionType1, SectionType2 } from "../components/generics";
+import { aobrackets, aobrackets2, aobrackets3 } from "../data/aobrackets"
+import { TopFooter } from "../ui/components";
+
 export const MetalBracketsPage = () => {
 
+  const data1 = aobrackets;
+  const data2 = aobrackets2;
+  const data3 = aobrackets3;
+
+  Aos.init({
+    duration: 1000,
+    mirror: true,
+    easing: 'ease',
+  });
 
   return (
     <>
-      
-      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img className="d-block w-100" src="..." alt="First slide"/>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="..." alt="Second slide"/>
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="..." alt="Third slide"/>
-          </div>
-        </div>
-        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </a>
+      <div className="container-aobrackets gradient4B">
+        {
+          data1.map((section) => (
+            <SectionType1 key={section.id} {...section} />
+          ))
+        }
+        <SectionType2 key={data2.id} {...data2} />
+        <SectionType1 key={data3.id} {...data3} />
+        <img className="img-fluid gradient4A" src="/assets/img/aobrackets/05aobrackets.png"
+          data-aos='fade-right'
+          alt="metal brackets" />
       </div>
-
+      <TopFooter bgColor={'gradient4B'} />
     </>
   )
 }

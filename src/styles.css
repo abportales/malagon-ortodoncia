@@ -12,48 +12,39 @@ body {
   font-size: 18px;
 }
 
-/* #carouselControls{
-  overflow-y: hidden;
-} */
-
 .gradient0A {
   background: linear-gradient(to top left, #003366 0%, #336699 100%);
 }
-
 .gradient0B {
   background: linear-gradient(to bottom left, #003366 0%, #336699 100%);
-}
-
-.gradient3A {
-  background: linear-gradient(to top right, #003366 0%, #336699 100%);
-}
-
-.gradient3B {
-  background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
 }
 
 .gradient1A {
   background: linear-gradient(to top left, #0099cc 0%, #003366 100%);
 }
-
-#gradient1B {
-  background: linear-gradient(to top right, #0099cc 0%, #003366 100%);
-}
-
 .gradient1B {
   background: linear-gradient(to bottom left, #0099cc 0%, #003366 100%);
-}
-
-#gradient1D {
-  background: linear-gradient(to bottom right, #0099cc 0%, #003366 100%);
 }
 
 .gradient2A {
   background: linear-gradient(to bottom, #003366 0%, #669999 100%);
 }
-
 .gradient2B {
   background: linear-gradient(to top, #003366 0%, #669999 100%);
+}
+
+.gradient3A {
+  background: linear-gradient(to top right, #003366 0%, #336699 100%);
+}
+.gradient3B {
+  background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
+}
+
+.gradient4A {
+  background: linear-gradient(to top right, #0099cc 0%, #003366 100%);
+}
+.gradient4B {
+  background: linear-gradient(to bottom right, #0099cc 0%, #003366 100%);
 }
 
 .bgDark {
@@ -268,13 +259,22 @@ body {
   width: 25%;
 }
 
+.container-aobrackets,
+.container-home,
 .container-invisalign,
 .container-itero,
 .container-frequency,
+.container-contactus,
 .container-about {
   overflow-x: hidden;
 }
 
+.contSectionType {
+  margin-top: 1rem;
+}
+
+.container-itero>div,
+.container-about>div,
 .container-frequency>div {
   width: 98%;
   margin-inline-start: 1%;
@@ -296,6 +296,8 @@ body {
   font-size: 3.5vw;
 }
 
+.textHome,
+.container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
 .container-itero>div>.contSectionType>div>.contText>.spanResponsive,
 .container-about>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2.5vw;
@@ -305,12 +307,14 @@ body {
 .container-invisalign>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2.2vw;
 }
-
+.container-empower>div>.contSectionType>div>.contText>.spanResponsive,
 .container-frequency>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2vw;
 }
 
 .contTextSpecial,
+.container-empower>div>.contSectionType>div>.contText>.spanResponsive,
+.container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
 .container-invisalign>div>.contSectionType>div>.contText {
   text-align: justify;
   padding: 3%;
@@ -319,9 +323,36 @@ body {
   border-color: white;
 }
 
+.container-itero>div>.contSectionType>div>.contText>.spanResponsive,
 .container-frequency>div>.contSectionType>div>.contText>.spanResponsive {
   text-align: justify;
   margin: 5px;
+}
+
+.container-contactus {
+  background-image: url('/assets/img/utilities/01contactus.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.container-contactus > div > form > input,
+.container-contactus > div > form > button,
+.container-contactus > div > form > textarea {
+  font-size: 26px;
+}
+
+.container-contactus > .maps > div {
+  background-color: #d0d0d0;
+  border-radius: 5%;
+  padding: 2%;
+}
+
+.container-contactus > div > hr,
+.container-contactus > div > form > hr {
+  border-top: 5px solid;
+  opacity: 0.5;
 }
 
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
@@ -393,6 +424,10 @@ body {
 
 /******************************************************** Medium devices (tablets, less than 992px) ***********************************************/
 @media (max-width: 991.98px) {
+
+  .textHome{
+    font-size: 4.5vh;
+  }
 
   .contSectionType>div>.contText {
     flex-direction: row;
@@ -474,6 +509,8 @@ body {
   }
 
   .contTextSpecial>span,
+  .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
+  .container-empower>div>.contSectionType>div>.contText>.spanResponsive,
   .container-invisalign>div>.contSectionType>div>.contText>.spanResponsive {
     font-size: 3.8vw;
     text-align: justify !important;
@@ -489,7 +526,10 @@ body {
   .orderLast {
     order: 2 !important;
   }
-
+  .container-contactus > div {
+    width: 96% !important;
+    margin-inline-start: 2%;
+  }
   .contSectionType {
     flex-direction: column;
     width: 90%;
@@ -573,6 +613,10 @@ body {
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
+  .textHome{
+    font-size: 4vh;
+  }
 
   .text-itero {
     font-size: 20px;
@@ -644,12 +688,11 @@ body {
     transform: scale(1.15);
   }
 
+  .container-empower>div,
+  .container-aobrackets>div,
+  .container-frequency>div,
   .container-itero>div,
   .container-invisalign>div {
-    height: 100vh;
-  }
-
-  .container-frequency>div {
     height: 100vh;
   }
 }

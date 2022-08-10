@@ -20,11 +20,11 @@ export const ReviewItem = ({
     const reviewImageUrl = (picture) ? `/assets/img/home/${id}.jpg` : `/assets/img/home/noProfilePic.jpg`;
 
     return (
-        <div className="card d-flex flex-row gap-2 cardReview">
-            <img className="content col-lg-3 col-sm-12 profileImgReview roundedImg border border-3 border-primary img-fluid align-self-center"
+        <div className="card d-flex flex-row p-1 cardReview">
+            <img className="content col-lg-3 col-sm-12 profileImgReview roundedImg border border-3 border-primary img-fluid align-self-center me-1"
                 data-aos="fade-right" 
                 src={reviewImageUrl} alt={name} />
-            <div className="content col-lg-9 cols-sm-12 fb-post fs-6"
+            <div className="content col-lg-9 cols-sm-12 fb-post fs-5 pe-1"
                 data-aos="fade-up"
                 data-href={dataHref} data-width="500" data-show-text="true">
 
@@ -39,7 +39,7 @@ export const ReviewItem = ({
                     </blockquote>
                 </div>
 
-                <div className="card-footer fs-6 bg-primary text-white rounded-bottom">
+                <div className="card-footer fs-5 bg-primary text-white rounded-bottom">
                     en&nbsp;
                     <a className="text-dark" href={cite} target="_blank"> {date} </a>
                 </div>

@@ -3,7 +3,6 @@ import { TopFooter } from '../ui/components'
 import { patients } from '../data/patients';
 import { GalleryItem } from '../components/patients';
 
-
 export const Patients = () => {
 
   const data = patients;
@@ -11,7 +10,7 @@ export const Patients = () => {
   return (
     <>
       <div className='container-gallery bgDark py-4'>
-        <div className='d-flex justify-content-center items'>
+        <div className='container d-flex items'>
           {
             data.map((item) => (
               <GalleryItem key={item.id} {...item} />

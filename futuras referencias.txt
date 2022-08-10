@@ -1,0 +1,37 @@
+&nbsp;
+
+/*************************************************debe ser el contenedor padre directo del los divs q tienen las col-xx-x
+estaba poniendo el abuelo, y aunq si pongo display none lo borra no era el indicado
+@media (max-width: 767.98px) {
+
+  .contSectionType > div {
+    /* flex: none; */
+    /* flex-wrap: initial !important; */
+    flex-direction: column;
+  }
+
+
+ <div className={`contSectionType d-flex justify-content-center ${bgColor}`}  >
+  <div className='d-flex justify-content-center'>
+    {
+    (!imgRight) &&  img
+    }
+    <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center' data-aos={(imgRight) ? 'fade-right' : 'fade-left'}>
+    <h1 className='text-center titleColor2'>{ title }</h1>
+    {
+
+***** para el deploy
+ejecutar el firebase de nodejs
+cd y la ruta del proyecto
+en el poryecto en visual code: yarn build
+
+en el firebase
+firebase init
+lgo seleccionar hosting
+cuando diga public poner dist
+y en SAP poner que si,
+y en github poner que no
+
+despues en visualCode copiar la carpeta de assets/img a la de dist
+
+ahora si, firebase deploy

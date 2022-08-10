@@ -5,7 +5,7 @@ import { SectionType1 } from '../components/generics'
 import { scrollToTop } from '../helpers'
 
 export const InvisalignPage = () => {
-  
+
   scrollToTop();
 
   AOS.init({
@@ -49,15 +49,16 @@ export const InvisalignPage = () => {
             </div>
           </div>
         </div>
-      
 
-      <section className='container-fluid conVideo my-3' >
-        <iframe className='d-flex' src="https://www.youtube.com/embed/Vp5MAB9uSPU"
-          title="Entrevista de Canal 7 a Malagón Ortodoncia sobre Invisalign"
-          frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen>
-        </iframe>
-      </section>
+
+        <section className='container-fluid conVideo my-3' >
+          <h1 className='text-center titleColor2'>Entrevista de canal 7</h1>
+          <iframe className='d-flex' src="https://www.youtube.com/embed/Vp5MAB9uSPU"
+            title="Entrevista de Canal 7 a Malagón Ortodoncia sobre Invisalign"
+            frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen>
+          </iframe>
+        </section>
       </div>
       <TopFooter bgColor={'gradient3A'} />
 

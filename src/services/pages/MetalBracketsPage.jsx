@@ -20,7 +20,7 @@ export const MetalBracketsPage = () => {
 
   return (
     <>
-      <div className="container-aobrackets gradient4B">
+      <div className="container-aobrackets gradient4A">
         {
           data1.map((section) => (
             <SectionType1 key={section.id} {...section} />
@@ -28,10 +28,10 @@ export const MetalBracketsPage = () => {
         }
         <SectionType2 key={data2.id} {...data2} />
         <SectionType1 key={data3.id} {...data3} />
-        <img className="img-fluid gradient4B" src="/assets/img/aobrackets/05aobrackets.png"
+        <img className="img-fluid gradient4A py-3" src="/assets/img/aobrackets/05aobrackets.png"
           alt="metal brackets" />
       </div>
-      <TopFooter bgColor={'gradient4A'} />
+      <TopFooter bgColor={'gradient4B'} />
     </>
   )
 }

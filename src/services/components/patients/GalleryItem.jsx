@@ -1,14 +1,22 @@
-
-export const GalleryItem = ({ imageName }) => {
-
-    const path = `/assets/img/patients/${imageName}.jpg`
+export const GalleryItem = ({
+    id,
+    path,
+    info,
+    width,
+    height,
+    section,
+}) => {
 
     return (
         <>
-            <div className="card" style={{ backgroundImage: `url("/assets/img/patients/${imageName}.jpg")` }}>
-            {/* <div className="card"> */}
-                {/* <img src={path} alt="" height={250}/> */}
-            </div>
+            <a href={path} data-lightbox={section} data-title={info}>
+                <img
+                    className='img-thumbnail image'
+                    style={{ width: width, height: height }}
+                    src={path}
+                    alt={info}
+                />
+            </a>
         </>
     )
 }

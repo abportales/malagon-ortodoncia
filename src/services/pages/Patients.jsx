@@ -1,48 +1,26 @@
 
-import { GalleryItem } from '../components/patients/galleryItem'
-// import { patientsImgUrls, bannerImgUrl } from '../data'
-import { TopFooter } from '../ui/components/TopFooter'
+import { TopFooter } from '../ui/components'
+import { patients } from '../data/patients';
+import { GalleryItem } from '../components/patients';
+
 
 export const Patients = () => {
 
-  // const externalUrls = patientsImgUrls;
-  // const externalBanner = bannerImgUrl;
-  const urls1 = ['001', '002', '003', '004', '005', '006'];
-  const urls2 = ['007', '008', '009', '010', '012', '013'];
-  // https://www.youtube.com/watch?v=6qko7Nbe8YA&ab_channel=FalconMasters
+  const data = patients;
+
   return (
     <>
-      <section className='patients bgDark'>
-        <div className="container-patients">
-
-        <div className="banner">
-            <GalleryItem key={'banner'} imageName={'banner'} />
-          </div>
-
-          <div className='gallery'>
-            {
-              urls1.map((image) => (
-                <GalleryItem key={image} imageName={image} />
-              ))
-            }
-          </div>
+      <div className='container-gallery bgDark py-4'>
+        <div className='d-flex justify-content-center items'>
+          {
+            data.map((item) => (
+              <GalleryItem key={item.id} {...item} />
+            ))
+          }
         </div>
-        <div className="container-patients2">
-          <div className='gallery'>
-            {
-              urls2.map((image) => (
-                <GalleryItem key={image} imageName={image} />
-              ))
-            }
-          </div>
+      </div>
 
-          <div className="banner">
-            <GalleryItem key={'011'} imageName={'011'} />
-          </div>
-        </div>
-      </section>
-
-      <TopFooter bgColor={'darkBackground'} />
+      <TopFooter bgColor={'bgDark'} />
     </>
   )
 }

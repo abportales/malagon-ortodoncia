@@ -31,8 +31,8 @@ export const HomePage = () => {
                 </section>
 
                 <Location/>
-                <Reviews numberOfReviews={3} bgColor={'darkBackground'} />
-                <TopFooter bgColor={'darkBackground'} />
+                <Reviews numberOfReviews={3} bgColor={'bgDark'} />
+                <TopFooter bgColor={'bgDark'} />
             </div>
         </>
     )

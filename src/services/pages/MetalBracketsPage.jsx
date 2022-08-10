@@ -1,9 +1,12 @@
 import Aos from "aos";
 import { SectionType1, SectionType2 } from "../components/generics";
-import { aobrackets, aobrackets2, aobrackets3 } from "../data/aobrackets"
+import { aobrackets, aobrackets2, aobrackets3 } from "../data"
+import { scrollToTop } from "../helpers";
 import { TopFooter } from "../ui/components";
 
 export const MetalBracketsPage = () => {
+  
+  scrollToTop();
 
   const data1 = aobrackets;
   const data2 = aobrackets2;
@@ -25,11 +28,10 @@ export const MetalBracketsPage = () => {
         }
         <SectionType2 key={data2.id} {...data2} />
         <SectionType1 key={data3.id} {...data3} />
-        <img className="img-fluid gradient4A" src="/assets/img/aobrackets/05aobrackets.png"
-          data-aos='fade-right'
+        <img className="img-fluid gradient4B" src="/assets/img/aobrackets/05aobrackets.png"
           alt="metal brackets" />
       </div>
-      <TopFooter bgColor={'gradient4B'} />
+      <TopFooter bgColor={'gradient4A'} />
     </>
   )
 }

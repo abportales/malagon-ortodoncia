@@ -1,8 +1,11 @@
 import { SectionType1 } from "../components/generics";
-import { empower } from "../data/empower"
+import { empower } from "../data"
+import { scrollToTop } from "../helpers";
 import { TopFooter } from "../ui/components";
 
 export const EmpowerBrackets = () => {
+
+  scrollToTop();
 
   const data = empower;
 

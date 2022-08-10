@@ -21,6 +21,6 @@ export const servicesHome = [
         info: 'El diseño y la funcionalidad de vanguardia de Empower 2 se combinan con la experiencia clínica para lograr una sonrisa que durará toda la vida.',
         width: 160,
         path: '/assets/img/home/gridHome02.jpg',
-        nav: '/damonq',
+        nav: '/empowerbrackets',
     }
 ];

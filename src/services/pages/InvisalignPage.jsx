@@ -1,9 +1,13 @@
 import AOS from 'aos'
 import { TopFooter } from '../ui/components/TopFooter'
-import { invisalign } from '../data/invisalign'
-import { SectionType1 } from '../components/generics/SectionType1'
+import { invisalign } from '../data'
+import { SectionType1 } from '../components/generics'
+import { scrollToTop } from '../helpers'
 
 export const InvisalignPage = () => {
+  
+  scrollToTop();
+
   AOS.init({
     duration: 1000,
     mirror: false,

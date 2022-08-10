@@ -32,7 +32,9 @@ export const SectionType1 = ({
                         (!imgRight) && img
                     }
                     <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center' data-aos={(imgRight) ? 'fade-right' : 'fade-left'}>
-                        <h1 className='text-center titleColor2'>{title}</h1>
+                        {
+                            (title !== '') && <h1 className='text-center titleColor2'>{title}</h1>
+                        }
                         <div className="contText d-flex flex-column">
                             {
                                 paragraphList.map(

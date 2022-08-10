@@ -15,6 +15,7 @@ body {
 .gradient0A {
   background: linear-gradient(to top left, #003366 0%, #336699 100%);
 }
+
 .gradient0B {
   background: linear-gradient(to bottom left, #003366 0%, #336699 100%);
 }
@@ -22,6 +23,7 @@ body {
 .gradient1A {
   background: linear-gradient(to top left, #0099cc 0%, #003366 100%);
 }
+
 .gradient1B {
   background: linear-gradient(to bottom left, #0099cc 0%, #003366 100%);
 }
@@ -29,6 +31,7 @@ body {
 .gradient2A {
   background: linear-gradient(to bottom, #003366 0%, #669999 100%);
 }
+
 .gradient2B {
   background: linear-gradient(to top, #003366 0%, #669999 100%);
 }
@@ -36,6 +39,7 @@ body {
 .gradient3A {
   background: linear-gradient(to top right, #003366 0%, #336699 100%);
 }
+
 .gradient3B {
   background: linear-gradient(to bottom right, #003366 0%, #336699 100%);
 }
@@ -43,15 +47,12 @@ body {
 .gradient4A {
   background: linear-gradient(to top right, #0099cc 0%, #003366 100%);
 }
+
 .gradient4B {
   background: linear-gradient(to bottom right, #0099cc 0%, #003366 100%);
 }
 
 .bgDark {
-  background: #313131;
-}
-
-#darkBackground {
   background: #313131;
 }
 
@@ -92,10 +93,7 @@ body {
   display: block;
 }
 
-#dropItem.active {
-  background-color: #1b1b1b;
-}
-
+#dropItem.active,
 #dropItem:focus {
   background-color: #1b1b1b;
 }
@@ -150,92 +148,22 @@ body {
 }
 
 /* ================================================================================================ CSS FOR PATIENTS' GALLERY */
-.patients {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-/* contenedor */
-.container-patients {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 0;
-
-  /* Grid */
-  display: grid;
-  /* una columna de fraccion  25/75*/
-  grid-template-columns: 1fr 3fr;
-  /* separacion interna entre elementos */
+.container-gallery{
   gap: 10px;
 }
 
-.container-patients2 {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 0;
-
-  /* Grid */
-  display: grid;
-  /* una columna de la fraccion y otra igual (50%) */
-  grid-template-columns: 3fr 1fr;
-  /* separacion interne entre elementos */
-  gap: 10px;
+.container-gallery > .items {
+  flex-flow: wrap;
+  gap: 1em;
 }
 
-.titulo {
-  font-size: 24px;
-  padding: 20px 0;
-}
-
-/* .contenedor-conciertos { */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.card {
-  border-radius: 10px;
-  min-height: 200px;
-  font-weight: bold;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  background-size: contain;
-  background-position: center center;
-}
-
-.card .textos {
-  height: 100%;
-}
-
-.banner {
-  border-radius: 10px;
-  /* text-align: center; */
-  /* padding: 10px; */
-  background-size: cover;
-  background-position: center center;
-
-  display: grid;
-  grid-template-rows: 1fr;
-  gap: 10px;
+.container-gallery > .items img:hover {
+  border: 7px solid aqua;
+  transition: 0.3s all ease-in-out;
 }
 
 /* ================================================================================================ END ==== PATIENTS' GALLERY */
-
-/* ================================================================================================ scrolling page */
-#containerFrecuency>section {
-  /*1vh = 1% de la altura del viewport
-  100vh = altura del viewport
-  1vw = 1% del ancho del viewport
-  100vw = ancho del viewport*/
-  /* border-bottom: 1px solid white; */
-  padding-bottom: 1rem;
-  height: 100vh;
-}
 
 .titleHead-clinic {
   font-size: 2.3em;
@@ -307,6 +235,7 @@ body {
 .container-invisalign>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2.2vw;
 }
+
 .container-empower>div>.contSectionType>div>.contText>.spanResponsive,
 .container-frequency>div>.contSectionType>div>.contText>.spanResponsive {
   font-size: 2vw;
@@ -330,41 +259,36 @@ body {
 }
 
 .container-contactus {
-  background-image: url('/assets/img/utilities/01contactus.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('/assets/img/utilities/01contactus.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
+  height: 100%;
   background-position: center center;
 }
 
-.container-contactus > div > form > input,
-.container-contactus > div > form > button,
-.container-contactus > div > form > textarea {
+.container-contactus>div>form>input,
+.container-contactus>div>form>button,
+.container-contactus>div>form>textarea {
   font-size: 26px;
 }
 
-.container-contactus > .maps > div {
+.container-contactus>.maps>div {
   background-color: #d0d0d0;
   border-radius: 5%;
   padding: 2%;
 }
 
-.container-contactus > div > hr,
-.container-contactus > div > form > hr {
+.container-contactus>div>hr,
+.container-contactus>div>form>hr {
   border-top: 5px solid;
   opacity: 0.5;
 }
 
 /***************************************************************************************************||  RESPONSIVE CONFIG FOR SCREENS   ||***/
 
-
-
-/* // X-Large devices (large desktops, less than 1400px) */
+/*************************************************** X-Large devices (large desktops, less than 1400px) *************************************/
 @media (max-width: 1399.98px) {
-
-  .text-itero {
-    font-size: 34px;
-  }
 
   .titleHead-clinic {
     font-size: 1.8em;
@@ -374,24 +298,14 @@ body {
     width: 90px !important;
   }
 
-  /* oldssssssssssssssssssssssssssssssssss */
-
-  div#containerItero {
-    width: 90% !important;
-  }
 }
 
-/* // Large devices (desktops, less than 1200px) */
+/*************************************************** Large devices (desktops, less than 1200px) **********************************************/
 @media (max-width: 1199.98px) {
   .titleHead-clinic {
     font-size: 1.2em;
   }
 
-  .text-itero {
-    font-size: 28px;
-  }
-
-  /* oldssssssssssssssssssssssssssssssssss */
   .imgHead-itero {
     width: 100px !important;
   }
@@ -401,7 +315,6 @@ body {
     width: 90% !important;
   }
 
-  /* // Large devices (desktops, less than 1200px) */
   .review {
     width: 75% !important;
   }
@@ -410,22 +323,16 @@ body {
     width: 25% !important;
   }
 
-
-  .imgMaxHeight {
-    max-height: 45rem !important;
-    /* display: inline !important; */
-  }
-
   .imgResponsive {
     width: 85% !important;
     height: auto !important;
   }
 }
 
-/******************************************************** Medium devices (tablets, less than 992px) ***********************************************/
+/****************************************************** Medium devices (tablets, less than 992px) *********************************************/
 @media (max-width: 991.98px) {
 
-  .textHome{
+  .textHome {
     font-size: 4.5vh;
   }
 
@@ -450,21 +357,7 @@ body {
   .review {
     width: 75% !important;
   }
-
-  .imgShort {
-    height: 15rem;
-    max-width: 90%;
-    border-radius: 10%;
-  }
-
-  .imgMaxHeight {
-    height: 20rem !important;
-    margin-left: 5%;
-    max-width: 90% !important;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 10%;
-  }
+/***************************** //Medium devices (tablets, less than 992px) */
 
   .conTextHome {
     width: 92% !important;
@@ -475,7 +368,6 @@ body {
     width: 100% !important;
   }
 
-  /* oldssssssssssssssssssssssssssssssssss */
   #menu #navBarContainer {
     justify-content: end !important;
   }
@@ -487,8 +379,6 @@ body {
   div#hideOnDevice {
     display: none !important;
   }
-
-  /* // Medium devices (tablets, less than 992px) */
 }
 
 /******************************************** Small devices (landscape phones, less than 768px) **********************************************/
@@ -526,10 +416,12 @@ body {
   .orderLast {
     order: 2 !important;
   }
-  .container-contactus > div {
+
+  .container-contactus>div {
     width: 96% !important;
     margin-inline-start: 2%;
   }
+
   .contSectionType {
     flex-direction: column;
     width: 90%;
@@ -552,6 +444,7 @@ body {
     flex-direction: column !important;
   }
 
+  /************************************ Small devices (landscape phones, less than 768px) */
   .cardReview>.content {
     height: fit-content !important;
   }
@@ -559,12 +452,6 @@ body {
   .conVideo {
     width: 480px;
     height: 320px;
-  }
-
-  .imgShort {
-    height: 15rem;
-    width: 50% !important;
-    border-radius: 10%;
   }
 
   .maps {
@@ -575,96 +462,30 @@ body {
     margin-top: 10px;
   }
 
-  /* // Small devices (landscape phones, less than 768px) */
-
   #menu #navBarContainer {
     justify-content: end !important;
   }
 
-  #hideOnDesktop {
-    display: none;
-  }
-
-  div#hideOnDevice {
-    display: none !important;
-  }
-
-  div#containerFrecuency {
-    width: 90% !important;
-  }
-
-  /* // Small devices (landscape phones, less than 768px) */
-
-  div#containerInvisalign,
-  div#containerItero {
-    width: 94% !important;
-  }
-
-  #containerInvisalign>section {
-    max-height: 100vh;
-  }
-
-  #servicesHome {
-    width: 100% !important;
-    text-align: center;
-  }
-
 }
 
-/* // X-Small devices (portrait phones, less than 576px) */
+/*************************************************************************** X-Small devices (portrait phones, less than 576px) ******************/
 @media (max-width: 575.98px) {
-  .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
-  .textHome{
-    font-size: 4vh;
-  }
 
-  .text-itero {
-    font-size: 20px;
+  .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
+  .textHome {
+    font-size: 4vh;
   }
 
   .review {
     width: 96% !important;
   }
 
-
-  /* oldssssssssssssssssssssssssssssssssss */
   .profileImgReview {
     height: 55% !important;
   }
 
-  .imgMaxHeight2 {
-    margin-left: 2.5%;
-    max-height: 25rem !important;
-    max-width: 94% !important;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius: 10%;
-  }
-
-  /* // X-Small devices (portrait phones, less than 576px) */
-
-  div#containerFrecuency {
-    width: 94% !important;
-    margin-inline-start: 2rem;
-  }
-
-  div#containerInvisalign,
-  div#containerItero {
-    width: 90% !important;
-  }
-
-  #containerInvisalign>section {
-    max-height: 100vh;
-  }
-
   .carousel-inner {
     height: 20em !important;
-    /* width: auto; */
-  }
-
-  #servicesHome {
-    width: 100% !important;
-    text-align: center;
   }
 
   .maps>iframe {
@@ -672,7 +493,7 @@ body {
   }
 }
 
-/* ==================================================just for > lap screen====================== ANIMATION FOR IMG ZOOM EFFECT*/
+/* ==================================================just for screen > lap screen====================== ANIMATION FOR IMG ZOOM EFFECT*/
 @media screen and (min-width:1024px) {
   .zoom {
     overflow: hidden;
@@ -696,27 +517,3 @@ body {
     height: 100vh;
   }
 }
-
-
-
-
-
-
-
-/* DISPOSITIVOS MENORES A 768PX */
-/* @media screen and (max-width:768px) {} */
-
-/* @media screen and (min-width:769px) and (max-width:992px) seria una opcion para segmentar mas los devices*/
-/* DISPOSITIVOS MENORES A 992PX */
-/* @media screen and (max-width:992px) {} */
-
-/* PANTALLA DE ESCRITORIO */
-/* @media (min-width:993px) {} */
-
-/* PANTALLA DE ESCRITORIO HD */
-/* @media (min-width:1024px) {} */
-
-/* @media (min-width:1439px) {} */
-
-/* PANTALLAS MAYORES A 769PX */
-/* @media screen and (min-width:769px) {} */

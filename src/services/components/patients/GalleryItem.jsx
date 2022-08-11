@@ -1,5 +1,3 @@
-import { Item } from 'react-photoswipe-gallery';
-
 export const GalleryItem = ({
     id,
     path,

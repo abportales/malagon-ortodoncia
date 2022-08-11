@@ -1,4 +1,4 @@
-import Aos from "aos";
+
 
 export const SectionType1 = ({
     id,
@@ -14,15 +14,9 @@ export const SectionType1 = ({
     const img = (
         <div className={`col-lg-6 col-md-6 col-sm-12 zoom d-flex justify-content-center align-items-center ${(orderLast) ? 'orderLast' : ''}`}
             data-aos={(imgRight) ? 'fade-left' : 'fade-right'}>
-            <img className="img-fluid imgResponsive" src={path} alt={id} style={{ height: height, width: width }} />
+            <img className="img-fluid imgResponsive p-3" src={path} alt={id} style={{ height: height, width: width }} />
         </div>
     )
-
-    Aos.init({
-        duration: 1000,
-        mirror: true,
-        easing: 'ease',
-    });
 
     return (
         <>

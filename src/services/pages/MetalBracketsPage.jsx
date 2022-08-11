@@ -1,4 +1,3 @@
-import Aos from "aos";
 import { SectionType1, SectionType2 } from "../components/generics";
 import { aobrackets, aobrackets2, aobrackets3 } from "../data"
 import { scrollToTop } from "../helpers";
@@ -11,12 +10,6 @@ export const MetalBracketsPage = () => {
   const data1 = aobrackets;
   const data2 = aobrackets2;
   const data3 = aobrackets3;
-
-  Aos.init({
-    duration: 1000,
-    mirror: true,
-    easing: 'ease',
-  });
 
   return (
     <>

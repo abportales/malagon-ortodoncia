@@ -13,7 +13,7 @@ export const ServiceItem = ({
         <>
             <div className="card cardServices col-lg-3 col-12"
                 data-aos="flip-left">
-                <div className="card-header">
+                <div className="card-header mt-2">
                     <Link to={nav} style={{ textDecoration: 'none' }}>
                         <h3 className="border border-dark rounded-3 card-title titleServicesCard p-2 text-center">{title}</h3>
                     </Link>

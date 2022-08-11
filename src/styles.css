@@ -227,10 +227,12 @@ body {
   font-size: 3.5vw;
 }
 
+.container-empower>div>.contSectionType>div>h1,
 .container-aobrackets>div>.contSectionType>div>h1 {
   margin-top: 10px;
-  font-size: 7vw;
+  font-size: 4vw;
 }
+
 .textHome,
 .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
 .container-itero>div>.contSectionType>div>.contText>.spanResponsive,
@@ -253,7 +255,7 @@ body {
 .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
 .container-invisalign>div>.contSectionType>div>.contText {
   text-align: justify;
-  padding: 3%;
+  padding: 4%;
   margin: 10px;
   border-style: dotted;
   border-color: white;
@@ -307,7 +309,7 @@ body {
 }
 
 /*************************************************** Large devices (desktops, less than 1200px) **********************************************/
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .titleHead-clinic {
     font-size: 1.2em;
   }
@@ -315,7 +317,6 @@ body {
   .imgHead-itero {
     width: 100px !important;
   }
-
 
   div#containerItero {
     width: 90% !important;
@@ -349,6 +350,7 @@ body {
   .imgResponsive {
     width: 75% !important;
     border-radius: 10%;
+    padding: 0 !important;
   }
 
   .servicesHome {
@@ -358,10 +360,6 @@ body {
 
   .imgCarousel {
     height: 360px !important;
-  }
-
-  .review {
-    width: 75% !important;
   }
 /***************************** //Medium devices (tablets, less than 992px) */
 
@@ -419,7 +417,7 @@ body {
 
   .contTextSpecial>h1,
   .container-invisalign>div>.contSectionType>div>.contText>h1 {
-    margin-top: 3rem;
+    margin-top: 10px;
     text-align: center !important;
   }
 
@@ -489,13 +487,15 @@ body {
     overflow: hidden;
   }
   
-  /* .conVideo>iFrame {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  } */
+  .container-empower>div>.contSectionType>div>h1,
+  .container-aobrackets>div>.contSectionType>div>h1 {
+    font-size: 6.5vw;
+  }
 
-  .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive,
+  .container-aobrackets>div>.contSectionType>div>.contText>.spanResponsive{
+    font-size: 3.5vh;
+  }
+
   .textHome {
     font-size: 4vh;
   }

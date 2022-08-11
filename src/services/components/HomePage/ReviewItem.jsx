@@ -1,5 +1,3 @@
-import Aos from "aos";
-
 export const ReviewItem = ({
     id,
     picture,
@@ -11,12 +9,6 @@ export const ReviewItem = ({
     date,
 }) => {
 
-    Aos.init({
-        duration: 1000,
-        mirror: false,
-        easing: 'ease',
-        anchorPlacement: 'top-bottom',
-    }) // values from 0 to 3000, with step 50ms)
     const reviewImageUrl = (picture) ? `/assets/img/home/${id}.jpg` : `/assets/img/home/noProfilePic.jpg`;
 
     return (

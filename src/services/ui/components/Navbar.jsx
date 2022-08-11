@@ -44,11 +44,11 @@ export const Navbar = () => {
                                         </NavLink>
                                         </li>
                                         <li><NavLink className="dropdown-item" id="dropItem" to="/metalbrackets" onClick={onCollapse}>
-                                            Brackets American Orthodontics
+                                            Brackets Convecionales
                                         </NavLink>
                                         </li>
                                         <li><NavLink className="dropdown-item" id="dropItem" to="/empowerbrackets" onClick={onCollapse}>
-                                            Brackets Empower2
+                                            Brackets Autoligado
                                         </NavLink>
                                         </li>
                                     </ul>

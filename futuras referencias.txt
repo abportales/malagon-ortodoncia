@@ -1,4 +1,16 @@
 &nbsp;
+/** para el error: 'No se encontró ningún archivo de declaración para el módulo'
+
+verificar si se tienen 2 archivos .lock
+  problem solve by remove yarn.lock. We can not have both (package-lock.json and yarn.lock)
+
+
+/*** http server rapido for test preproduction
+yarn add --global http-server
+nos metemos a la carpeta de dist, (despues del yarn build)
+y damos el comando:
+  http-server -o
+
 
 /*************************************************debe ser el contenedor padre directo del los divs q tienen las col-xx-x
 estaba poniendo el abuelo, y aunq si pongo display none lo borra no era el indicado

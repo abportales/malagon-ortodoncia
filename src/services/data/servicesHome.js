@@ -9,7 +9,7 @@ export const servicesHome = [
     },
     {
         id: 'gridHome02',
-        title: 'Brackets American Orthodontics',
+        title: 'Brackets Convencionales',
         info: 'Los brackets metálicos de American Orthodontics le brindan la calidad y fiabilidad del tratamiento que usted requiere. ',
         width: 190,
         path: '/assets/img/aobrackets/00aobrackets.jpg',
@@ -17,7 +17,7 @@ export const servicesHome = [
     },
     {
         id: 'gridHome03',
-        title: 'Brackets Empower2',
+        title: 'Brackets Autoligado',
         info: 'El diseño y la funcionalidad de vanguardia de Empower 2 se combinan con la experiencia clínica para lograr una sonrisa que durará toda la vida.',
         width: 160,
         path: '/assets/img/home/gridHome02.jpg',

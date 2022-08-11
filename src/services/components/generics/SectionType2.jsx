@@ -1,5 +1,3 @@
-import Aos from "aos";
-
 export const SectionType2 = ({
     id,
     bgColor,
@@ -11,11 +9,6 @@ export const SectionType2 = ({
     height,
 }) => {
 
-    Aos.init({
-        duration: 1000,
-        mirror: true,
-        easing: 'ease',
-    });
     return (
         <>
             <div className={`d-flex justify-content-center ${bgColor}`}  >

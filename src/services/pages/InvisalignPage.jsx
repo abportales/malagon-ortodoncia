@@ -1,4 +1,3 @@
-import AOS from 'aos'
 import { TopFooter } from '../ui/components/TopFooter'
 import { invisalign } from '../data'
 import { SectionType1 } from '../components/generics'
@@ -7,12 +6,6 @@ import { scrollToTop } from '../helpers'
 export const InvisalignPage = () => {
 
   scrollToTop();
-
-  AOS.init({
-    duration: 1000,
-    mirror: false,
-    easing: 'ease',
-  }) // values from 0 to 3000, with step 50ms)
 
   const url = "https://providerbio-latam.invisalign.com/sv/1252996#start"
 
@@ -30,7 +23,7 @@ export const InvisalignPage = () => {
         <div className='d-flex justify-content-center gradient3B'>
           <div className='contSectionType d-flex justify-content-center'>
             <div className='col-lg-6 col-md-6 col-sm-12 zoom orderLast d-flex justify-content-center align-items-center' data-aos="fade-left">
-              <img className='img-fluid imgResponsive'
+              <img className='img-fluid imgResponsive p-3'
                 src="/assets/img/invisalign/00alineadorinvisalign.jpg"
                 style={{ maxWidth: '840px', maxHeight: '720px' }}
                 alt="00alineadorinvisalign" />

@@ -1,12 +1,4 @@
-import Aos from "aos";
-
 export const Location = () => {
-
-    Aos.init({
-        duration: 1000,
-        mirror: true,
-        easing: 'ease',
-    });
 
     return (
         <>

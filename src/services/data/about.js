@@ -44,7 +44,7 @@ export const about = [
             },
             {
                 id: 'about006',
-                p: 'Tero Provider'
+                p: 'iTero Provider'
             }
         ],
         path: '/assets/img/aboutus/01aboutus.jpg',

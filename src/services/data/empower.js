@@ -4,7 +4,7 @@ export const empower = [
         imgRight: true,
         orderLast: false,
         bgColor: 'gradient0A',
-        title: "Brackets Estético Autoligado",
+        title: "Brackets Metálicos Autoligado",
         paragraphList: [
             {
                 id: 'empower000',
@@ -48,7 +48,7 @@ export const empower = [
         imgRight: true,
         orderLast: false,
         bgColor: 'gradient0A',
-        title: "Brackets Metálicos Autoligado",
+        title: "Brackets Estéticos Autoligado",
         paragraphList: [
             {
                 id: 'empower006',

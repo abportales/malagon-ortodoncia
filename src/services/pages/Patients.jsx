@@ -10,7 +10,7 @@ export const Patients = () => {
   return (
     <>
       <div className='container-gallery bgDark py-4'>
-        <div className='container d-flex items'>
+        <div className='d-flex items'>
           {
             data.map((item) => (
               <GalleryItem key={item.id} {...item} />
@@ -18,7 +18,6 @@ export const Patients = () => {
           }
         </div>
       </div>
-
       <TopFooter bgColor={'bgDark'} />
     </>
   )

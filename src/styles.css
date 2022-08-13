@@ -156,11 +156,13 @@ body {
   flex-flow: wrap;
   gap: 1em;
   justify-content: center;
+  width: 100%;
 }
 
-.container-gallery > .items img:hover {
+.container-gallery > .items .miniImg:hover {
   border: 7px solid aqua;
   transition: 0.3s all ease-in-out;
+  cursor:pointer;
 }
 
 /* ================================================================================================ END ==== PATIENTS' GALLERY */
@@ -388,7 +390,7 @@ body {
 /******************************************** Small devices (landscape phones, less than 768px) **********************************************/
 @media (max-width: 767.98px) {
 
-  .container-gallery > .items img{
+  .container-gallery > .items .miniImg{
     width: 180px !important;
     height: 180px !important;
   }

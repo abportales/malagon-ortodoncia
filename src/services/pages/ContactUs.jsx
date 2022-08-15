@@ -3,6 +3,11 @@ import { TopFooter } from "../ui/components"
 
 export const ContactUs = () => {
 
+    // onSubmit
+    const SubmitEvent = () => {
+        window.open("https://formsubmit.co/malagon.ortodoncia@gmail.com", "", "width=200,height=100");
+    }
+
     return (
         <>
             <Header />
@@ -10,7 +15,9 @@ export const ContactUs = () => {
                 <div className='w-25'>
                     <h2 className='text-white mt-5 bgDark p-2 rounded-3 mx-1'>Nos encantaria escuchar cualquier comentario o duda que tengas.</h2>
                     <hr />
-                    <form action="https://formsubmit.co/malagon.ortodoncia@gmail.com" target="_blank"
+                    <form 
+                        // action={confirmWindow} 
+                        // target="_blank"
                         className="mx-1"
                         method="POST">
 

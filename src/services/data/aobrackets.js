@@ -16,6 +16,7 @@ export const aobrackets = [
             },
         ],
         path: '/assets/img/aobrackets/00aobrackets.jpg',
+        storagePath: 'aobrackets/00aobrackets.jpg',
         width: '720px',
         height: '720px',
     },
@@ -36,6 +37,7 @@ export const aobrackets = [
             },
         ],
         path: '/assets/img/aobrackets/03aobrackets.jpg',
+        storagePath: 'aobrackets/03aobrackets.jpg',
         width: '720px',
         height: '420px',
     },
@@ -58,7 +60,9 @@ export const aobrackets2 =
         },
     ],
     pathL: '/assets/img/aobrackets/01aobrackets.png',
+    storagePathL: 'aobrackets/01aobrackets.png',
     pathR: '/assets/img/aobrackets/02aobrackets.png',
+    storagePathR: 'aobrackets/02aobrackets.png',
     width: '360px',
     height: '720px',
 };
@@ -81,6 +85,7 @@ export const aobrackets3 =
         },
     ],
     path: '/assets/img/aobrackets/04aobrackets.png',
+    storagePath: 'aobrackets/04aobrackets.png',
     width: '840px',
     height: '580px',
 };

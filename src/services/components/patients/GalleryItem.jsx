@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import { Modal } from './Modal';
+import { useFetchImg } from '../../hooks/useFetchImg';
 
 const Content = styled.div`
   img {
@@ -31,15 +32,16 @@ const Button = styled.button`
 `
 
 export const GalleryItem = ({
-    id,
     path,
+    storagePath,
     info,
     width,
     height,
-    section,
 }) => {
 
     const [modalVisibility, setModalVisibility] = useState(false)
+
+    const {url} = useFetchImg(storagePath);
 
     return (
         <>
@@ -47,7 +49,7 @@ export const GalleryItem = ({
                 onClick={() => setModalVisibility(!modalVisibility)}
                 className='img-thumbnail miniImg'
                 style={{ width: width, height: height }}
-                src={path}
+                src={url}
                 alt={info}
             />
             <div>
@@ -59,7 +61,7 @@ export const GalleryItem = ({
                     <Content>
                         <img
                             className='img-fluid'
-                            src={path}
+                            src={url}
                             alt={info}
                             style={{ maxHeight: "690px", maxWidth: "1100px" }}
                         />

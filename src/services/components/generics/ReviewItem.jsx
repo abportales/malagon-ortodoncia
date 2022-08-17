@@ -1,6 +1,9 @@
+import { useFetchImg } from "../../hooks/useFetchImg"
+
 export const ReviewItem = ({
     id,
-    picture,
+    path,
+    storagePath,
     dataHref,
     cite,
     review,
@@ -9,13 +12,12 @@ export const ReviewItem = ({
     date,
 }) => {
 
-    const reviewImageUrl = (picture) ? `/assets/img/home/${id}.jpg` : `/assets/img/home/noProfilePic.jpg`;
-
+    const {url} = useFetchImg(storagePath)
     return (
         <div className="card d-flex flex-row p-1 cardReview">
             <img className="content col-lg-3 col-sm-12 profileImgReview roundedImg border border-3 border-primary img-fluid align-self-center me-1"
                 data-aos="fade-right" 
-                src={reviewImageUrl} alt={name} />
+                src={url} alt={name} />
             <div className="content col-lg-9 cols-sm-12 fb-post fs-5 pe-1"
                 data-aos="fade-up"
                 data-href={dataHref} data-width="500" data-show-text="true">

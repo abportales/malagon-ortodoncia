@@ -1,7 +1,8 @@
 export const reviewsHome = [
     {
         id: 'review00',
-        picture: true,        
+        path: '/assets/img/home/review00.jpg',
+        storagePath: 'home/review00.jpg',
         dataHref: "https://www.facebook.com/perla.padron.f/posts/pfbid02WvYu5WCN82UCRdioU45Q62uPnpohbtyfsX5nN1MZULLCSd7LgehXR8KMBb5nggJLl",
         cite: "https://www.facebook.com/perla.padron.f/posts/3341672632724699",
         review: 'Excelente servicio, equipo de primera, con todas las medias sanitarias. Excelente ubicación, buen trato y precios accesibles para todos los tratamientos. Ampliamente recomendable.🙋🏻‍♀️Ortodoncia 😁',
@@ -11,7 +12,8 @@ export const reviewsHome = [
     },
     {
         id: 'review01',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',
         dataHref: "https://www.facebook.com/ale.lomeli.10/posts/pfbid0rcnGAu9Z3ihUaTQ7MesSUrqwtvYgDoiZhCBqtfXYAkPkha6fF7tdvov2Ma9MgPzvl",
         cite: "https://www.facebook.com/ale.lomeli.10/posts/10157406032831432",
         review: 'El mejor super limpio y super atento y muy bueno!!',
@@ -21,7 +23,8 @@ export const reviewsHome = [
     },
     {
         id: 'review02',
-        picture: true,        
+        path: '/assets/img/home/review02.jpg',       
+        storagePath: 'home/review02.jpg',
         dataHref: "https://www.facebook.com/giovanny1997/posts/pfbid02cMd6muXTz3Zo2CSRpsgAZKwqUTNZPKPRAoVu1ywj87CyhUoM5HbpykPjfSLXrWDol",
         cite: "https://www.facebook.com/giovanny1997/posts/4531210296915648",
         review: 'Excelente el servicio que ofrece el doctor, siempre con los instrumentos de última vanguardia, ofrece muchas opciones para tener los mejores tratamientos.',
@@ -31,7 +34,8 @@ export const reviewsHome = [
     },
     {
         id: 'review03',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',        
         dataHref: "https://www.facebook.com/dany.quijano/posts/pfbid02XwJmLFAR6s7PbKZEk9eanVMvKhpKCKvdfhMo4uinHPd4BSCTvTL1MqQwJWJ625Gyl",
         cite: "https://www.facebook.com/dany.quijano/posts/10224418264671376",
         review: 'Excelente Dr. súper profesional y cuenta con tecnología de primera. Feliz de confiarle mi sonrisa!!',
@@ -41,7 +45,8 @@ export const reviewsHome = [
     },
     {
         id: 'review04',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',        
         dataHref: "https://www.facebook.com/nuria.goonzalez/posts/pfbid02a62P4TRwTbFBvFBdzJwDkJtSECHRBgYqCZinba16u3awnNekz6s8tGRWehaHWBFzl",
         cite: "https://www.facebook.com/nuria.goonzalez/posts/10225223399828753",
         review: 'Excelente trato, muy amable y bueno en su trabajo, estoy muy feliz con mis resultados.',
@@ -51,7 +56,8 @@ export const reviewsHome = [
     },
     {
         id: 'review05',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',        
         dataHref: "https://www.facebook.com/carolina.sancheztiscareno/posts/pfbid02x722CFYetFMgP5QmGVnLtjX5nxBYLjRiG1wF1mRhRQV1qW9mTnBhawTh5UV5p5dal",
         cite: "https://www.facebook.com/carolina.sancheztiscareno/posts/10159452795354337",
         review: 'Excelente servicio e instalaciones, estoy súper satisfecha con mi tratamiento!',
@@ -61,7 +67,8 @@ export const reviewsHome = [
     },
     {
         id: 'review06',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',        
         dataHref: "https://www.facebook.com/kareen.garcia.50/posts/pfbid0qTWQN4EPAtoLkbcQgtktsLg2M1jPPnNJYbwZ64yPoeMmpoHtt5Aj2VFNnrgBS6Xml",
         cite: "https://www.facebook.com/kareen.garcia.50/posts/10158863091463978",
         review: 'llevo mi tratamiento de ortodoncia con el y super bien la atención con el, es genial te explica cualquier duda y siempre está al pendiente de mi tratamiento.. excelente ortodoncista',
@@ -71,7 +78,8 @@ export const reviewsHome = [
     },
     {
         id: 'review07',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',        
         dataHref: "https://www.facebook.com/Yahirr.Ramirez/posts/pfbid02VaFLUfLAA4QfsMzNXVpFXHEQywiXaxg6iiJPB1ugT7Dx2fdeSMuVVVqH61kbfEafl",
         cite: "https://www.facebook.com/Yahirr.Ramirez/posts/10223697360653970",
         review: 'Excelente trabajo! muy buen trato! lo recomiendo ampliamente!',
@@ -81,7 +89,8 @@ export const reviewsHome = [
     },
     {
         id: 'review08',
-        picture: false,        
+        path: '/assets/img/home/noProfilePic.jpg',
+        storagePath: 'home/noProfilePic.jpg',        
         dataHref: "https://www.facebook.com/yazmaraleiilani.sanchz/posts/pfbid0dvbWgiUnuf6w3a73gAYLfLWrbX5i5batC79nahz8hRaQCLrMBtV5KM4dMZEudfftl",
         cite: "https://www.facebook.com/yazmaraleiilani.sanchz/posts/5347277195316729",
         review: 'Excelente atención! El trato que da y la explicación me hizo sentir muy agusto! Estoy encantada con el tratamiento Invisalign 🤩!!',

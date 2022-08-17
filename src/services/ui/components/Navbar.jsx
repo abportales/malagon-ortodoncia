@@ -11,8 +11,8 @@ export const Navbar = () => {
 
     return (
         <>
-            <div className="container-fluid" id='menu'>
-                <div className="d-flex justify-content-center" id='navBarContainer'>
+            <div className="d-flex" id='menu'>
+                <div className="ms-2" id='navBarContainer'>
                     <nav className="navbar navbar-expand-lg" >
                         <NavLink
                             className={({ isActive }) => `navbar-brand nav-item nav-link ${isActive ? 'active' : ''}`}
@@ -44,11 +44,11 @@ export const Navbar = () => {
                                         </NavLink>
                                         </li>
                                         <li><NavLink className="dropdown-item" id="dropItem" to="/metalbrackets" onClick={onCollapse}>
-                                            Brackets Convecionales
+                                            Bracket Convencional
                                         </NavLink>
                                         </li>
                                         <li><NavLink className="dropdown-item" id="dropItem" to="/empowerbrackets" onClick={onCollapse}>
-                                            Brackets Autoligado
+                                            Bracket Autoligado
                                         </NavLink>
                                         </li>
                                     </ul>

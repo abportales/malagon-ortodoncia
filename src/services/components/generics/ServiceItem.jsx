@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useFetchImg } from "../../hooks/useFetchImg"
 
 export const ServiceItem = ({
     id,
@@ -6,8 +7,11 @@ export const ServiceItem = ({
     info,
     width,
     path,
+    storagePath,
     nav,
 }) => {
+
+    const { url } = useFetchImg(storagePath);
 
     return (
         <>
@@ -21,7 +25,7 @@ export const ServiceItem = ({
                 <div className="card-body mt-2">
                     <p className="card-text" align="justify">{info}</p>
                     <Link to={nav}>
-                        <img className="d-block m-auto" src={path} alt={title}
+                        <img className="d-block m-auto" src={url} alt={title}
                             width={width} />
                     </Link>
                 </div>

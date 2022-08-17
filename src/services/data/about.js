@@ -20,6 +20,7 @@ export const about = [
             }
         ],
         path: '/assets/img/aboutus/00aboutus.jpg',
+        storagePath: 'aboutus/00aboutus.jpg',
         width: '720px',
         height: '840px',
     },
@@ -48,6 +49,7 @@ export const about = [
             }
         ],
         path: '/assets/img/aboutus/01aboutus.jpg',
+        storagePath: 'aboutus/01aboutus.jpg',
         width: '720px',
         height: '840px',
     },

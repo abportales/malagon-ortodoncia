@@ -1,5 +1,5 @@
-import { servicesHome } from "../../data/servicesHome"
-import { ServiceItem } from "./ServiceItem";
+import { servicesHome } from "../../data"
+import { ServiceItem } from "../generics";
 
 export const Services = () => {
 

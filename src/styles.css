@@ -167,8 +167,6 @@ body {
 
 /* ================================================================================================ END ==== PATIENTS' GALLERY */
 
-
-
 .titleHead-clinic {
   font-size: 2.3em;
 }
@@ -207,8 +205,8 @@ body {
 }
 
 .container-itero>div,
-.container-about>div,
-.container-frequency>div {
+.container-frequency>div,
+.container-about>div{
   width: 98%;
   margin-inline-start: 1%;
   padding-bottom: 2rem;
@@ -281,7 +279,7 @@ body {
 }
 
 .container-contactus {
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('/assets/img/utilities/01contactus.jpg');
+  /* background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('/assets/01contactus.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -385,8 +383,14 @@ body {
     width: 100% !important;
   }
 
-  #menu #navBarContainer {
-    justify-content: end !important;
+  #menu {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .container-gallery > .items {
+    gap: 0.3em;
   }
 
   #hideOnDesktop {
@@ -484,10 +488,6 @@ body {
     margin-top: 10px;
   }
 
-  #menu #navBarContainer {
-    justify-content: end !important;
-  }
-
 }
 
 /*************************************************************************** X-Small devices (portrait phones, less than 576px) ******************/
@@ -568,6 +568,10 @@ body {
 
   .container-frequency h1 {
     font-size: 2.2em !important;
+  }
+
+  #menu {
+    justify-content: center;
   }
 }
 

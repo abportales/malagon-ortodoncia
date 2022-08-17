@@ -1,10 +1,11 @@
 import { getReviewsForNumber } from '../../helpers/getReviewsForNumber'
-import { ReviewItem } from './ReviewItem'
+import { ReviewItem } from '../generics'
+
 
 export const Reviews = ({ numberOfReviews, bgColor }) => {
 
     const reviews = getReviewsForNumber(numberOfReviews)
-
+    
     return (
         <>
             <div className={`container-fluid w-100 d-flex justify-content-center ${bgColor}`}>

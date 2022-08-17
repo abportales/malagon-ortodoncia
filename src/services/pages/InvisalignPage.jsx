@@ -2,13 +2,15 @@ import { TopFooter } from '../ui/components/TopFooter'
 import { invisalign } from '../data'
 import { SectionType1 } from '../components/generics'
 import { scrollToTop } from '../helpers'
+import { useFetchImg } from '../hooks/useFetchImg'
 
 export const InvisalignPage = () => {
 
   scrollToTop();
 
-  const url = "https://providerbio-latam.invisalign.com/sv/1252996#start"
-
+  const extUrl = "https://providerbio-latam.invisalign.com/sv/1252996#start"
+  const {url} = useFetchImg('invisalign/00alineadorinvisalign.jpg')
+  // const url = "/assets/img/invisalign/00alineadorinvisalign.jpg"
   const data = invisalign;
 
   return (
@@ -24,7 +26,7 @@ export const InvisalignPage = () => {
           <div className='contSectionType d-flex justify-content-center'>
             <div className='col-lg-6 col-md-6 col-sm-12 zoom orderLast d-flex justify-content-center align-items-center' data-aos="fade-left">
               <img className='img-fluid imgResponsive p-3'
-                src="/assets/img/invisalign/00alineadorinvisalign.jpg"
+                src={url}
                 style={{ maxWidth: '840px', maxHeight: '720px' }}
                 alt="00alineadorinvisalign" />
             </div>
@@ -34,7 +36,7 @@ export const InvisalignPage = () => {
               <div className='contTextSpecial'>
                 <span className='text-white spanResponsive'>
                   Tómate una selfie sonriendo y te mostramos lo que un tratamiento Invisalign puede hacer por ti.&nbsp;
-                  <a href={url} className='text-info' target="_blank">
+                  <a href={extUrl} className='text-info' target="_blank">
                     Clic aqui.
                   </a>
                 </span>

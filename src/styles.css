@@ -146,6 +146,11 @@ body {
   box-shadow: 1px 3px 3px 1px rgba(3, 32, 51, .8);
 }
 
+.googleMap-container{
+  height: 480px;
+  width: 100%;
+}
+
 /* ================================================================================================ CSS FOR PATIENTS' GALLERY */
 
 .container-gallery{
@@ -537,8 +542,15 @@ body {
     height: 20em !important;
   }
 
-  .maps>iframe {
+  /* .maps>iframe {
     height: 250px !important;
+  } */
+  .googleMap-container{
+    height: 370px;
+    width: 100%;
+  }
+  .googleMap-container p{
+    font-size: 1.2em !important;
   }
 }
 

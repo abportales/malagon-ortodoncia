@@ -1,7 +1,14 @@
+import { Video } from '../components/generics'
 import { Header, TypeWriter, Carousel, Services, Reviews, Location } from '../components/HomePage'
+import { useFetchImg } from '../hooks/useFetchImg'
 import { TopFooter } from '../ui/components/TopFooter'
 
 export const HomePage = () => {
+
+    const dataVideo = {
+        url: 'video/Invisalign.mp4',
+        miniCap: 'video/Invisalign.jpg',
+    }
 
     return (
         <>
@@ -21,14 +28,7 @@ export const HomePage = () => {
                 </section>
 
                 <Services />
-                <section className='container-fluid conVideo my-3' >
-                    <iframe src="https://youtube.com/embed/z-qvHluNMtk"
-                        title="Made for Freedom. Made for You. Invisalign"
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen>
-                    </iframe>
-                </section>
+                <Video url={dataVideo.url} miniCapture={dataVideo.miniCap} />          
 
                 < Location />
                 <Reviews numberOfReviews={3} bgColor={'bgDark'} />

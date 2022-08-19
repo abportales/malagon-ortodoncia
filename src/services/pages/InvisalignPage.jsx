@@ -1,17 +1,26 @@
 import { TopFooter } from '../ui/components/TopFooter'
 import { invisalign } from '../data'
-import { SectionType1 } from '../components/generics'
+import { SectionType1, Video } from '../components/generics'
 import { scrollToTop } from '../helpers'
 import { useFetchImg } from '../hooks/useFetchImg'
+import { useEffect } from 'react'
 
 export const InvisalignPage = () => {
 
-  scrollToTop();
+  useEffect(() => {
+    // scrollToTop();
+  }, [])
+  
 
   const extUrl = "https://providerbio-latam.invisalign.com/sv/1252996#start"
   const {url} = useFetchImg('invisalign/00alineadorinvisalign.jpg')
   // const url = "/assets/img/invisalign/00alineadorinvisalign.jpg"
   const data = invisalign;
+
+  const dataVideo = {
+    url: 'video/Entrevista.mp4',
+    miniCap: 'video/Entrevista.jpg',
+}
 
   return (
     <>
@@ -42,20 +51,16 @@ export const InvisalignPage = () => {
                 </span>
               </div>
             </div>
+
           </div>
         </div>
-
-
-        <section className='container-fluid conVideo my-3' >
-          <h1 className='text-center titleColor2'>Entrevista de canal 7</h1>
-          <iframe className='d-flex' src="https://www.youtube.com/embed/Vp5MAB9uSPU"
-            title="Entrevista de Canal 7 a Malagón Ortodoncia sobre Invisalign"
-            frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen>
-          </iframe>
-        </section>
+        <div className='d-flex flex-column justify-content-center gradient3A'>
+          <h2 className='titleColor2 text-center'> Entrevista de canal 7 sobre Invisalign</h2>
+          <Video url={dataVideo.url} miniCapture={dataVideo.miniCap} />
+        </div>
       </div>
-      <TopFooter bgColor={'gradient3A'} />
+
+      <TopFooter bgColor={'gradient3B'} />
 
     </>
   )

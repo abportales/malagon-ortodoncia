@@ -184,7 +184,7 @@ body {
   overflow: hidden;
 }
 
-.conVideo>iFrame {
+.conVideo>video {
   width: 100%;
   height: 100%;
   position: absolute;

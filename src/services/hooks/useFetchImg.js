@@ -6,12 +6,14 @@ import dbStorage from "../../firebase/firebaseConfig";
 export const useFetchImg = (storagePath) => {
   
     const [url, setUrl] = useState('/assets/noImg.gif');
-
+    const [isLoading, setIsLoading] = useState(true);
+    
     useEffect(() => {
         const fetchStorage = async () => {
             const reference = ref( dbStorage, storagePath );
             await getDownloadURL(reference).then((x) =>{
                 setUrl(x);
+                setIsLoading(false);
             } )
         }
 
@@ -20,5 +22,6 @@ export const useFetchImg = (storagePath) => {
 
     return {
         url: url,
+        isLoading: isLoading,
     }
 }

@@ -1,3 +1,10 @@
+****hacer revert en los archivos locales***
+primero git status para ver cuales archivos cambiaran conforme al ultimo git push
+
+despues git checkout . si queremos restablecer todo, o git checkout -- file si queremos solo 1
+**************************************************************************************************************
+
+
 &nbsp;
 /** para el error: 'No se encontró ningún archivo de declaración para el módulo'
 

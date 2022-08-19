@@ -8,9 +8,8 @@ import { useEffect } from 'react'
 export const InvisalignPage = () => {
 
   useEffect(() => {
-    // scrollToTop();
+    scrollToTop();
   }, [])
-  
 
   const extUrl = "https://providerbio-latam.invisalign.com/sv/1252996#start"
   const {url} = useFetchImg('invisalign/00alineadorinvisalign.jpg')
@@ -54,7 +53,7 @@ export const InvisalignPage = () => {
 
           </div>
         </div>
-        <div className='d-flex flex-column justify-content-center gradient3A'>
+        <div className='d-flex flex-column justify-content-center gradient3A pt-3'>
           <h2 className='titleColor2 text-center'> Entrevista de canal 7 sobre Invisalign</h2>
           <Video url={dataVideo.url} miniCapture={dataVideo.miniCap} />
         </div>

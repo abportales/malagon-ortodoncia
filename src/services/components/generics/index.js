@@ -1,5 +1,6 @@
+export * from './GrowingSpiner'
+export * from './ReviewItem'
 export * from './SectionType1'
 export * from './SectionType2'
 export * from './ServiceItem'
-export * from './ReviewItem'
 export * from './Video'

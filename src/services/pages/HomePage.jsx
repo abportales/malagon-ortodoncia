@@ -1,6 +1,5 @@
 import { Video } from '../components/generics'
 import { Header, TypeWriter, Carousel, Services, Reviews, Location } from '../components/HomePage'
-import { useFetchImg } from '../hooks/useFetchImg'
 import { TopFooter } from '../ui/components/TopFooter'
 
 export const HomePage = () => {

@@ -15,7 +15,7 @@ export const servicesHome = [
         width: 190,
         path: '/assets/img/aobrackets/00aobrackets.jpg',
         storagePath: 'aobrackets/00aobrackets.jpg',
-        nav: '/metalbrackets',
+        nav: '/bracketconvencional',
     },
     {
         id: 'gridHome03',
@@ -24,6 +24,6 @@ export const servicesHome = [
         width: 160,
         path: '/assets/img/home/gridHome02.jpg',
         storagePath: 'home/gridHome02.jpg',
-        nav: '/empowerbrackets',
+        nav: '/bracketautoligado',
     }
 ];

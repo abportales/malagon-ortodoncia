@@ -13,9 +13,9 @@ export const AppRouter = () => {
                 <Route path="frequency" element={<FrequencyQuestions />} />
                 <Route path="patients" element={<Patients />} />
                 <Route path="invisalign" element={<InvisalignPage />} />
-                <Route path="empowerbrackets" element={<EmpowerBrackets />} />
-                <Route path="metalbrackets" element={<MetalBracketsPage />} />
-                
+                <Route path="bracketautoligado" element={<EmpowerBrackets />} />
+                <Route path="bracketconvencional" element={<MetalBracketsPage />} />
+                <Route path="sitemap.xml" element={<Navigate to="/sitemap.xml" />} />
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </>

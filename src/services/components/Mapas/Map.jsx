@@ -9,7 +9,7 @@ export const Map = () => {
         googleMapsApiKey: credentials.mapsKey,
     })
 
-    if (!isLoaded) return <div><img src="/assets/noImg-gif" alt="Loading..." /></div>
+    if (!isLoaded) return <div><img src="/assets/basic/noImg.gif" alt="Loading..." /></div>
 
     return (
         <>

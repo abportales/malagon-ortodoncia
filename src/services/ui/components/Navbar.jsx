@@ -43,11 +43,11 @@ export const Navbar = () => {
                                             Invisalign
                                         </NavLink>
                                         </li>
-                                        <li><NavLink className="dropdown-item" id="dropItem" to="/metalbrackets" onClick={onCollapse}>
+                                        <li><NavLink className="dropdown-item" id="dropItem" to="/bracketconvencional" onClick={onCollapse}>
                                             Bracket Convencional
                                         </NavLink>
                                         </li>
-                                        <li><NavLink className="dropdown-item" id="dropItem" to="/empowerbrackets" onClick={onCollapse}>
+                                        <li><NavLink className="dropdown-item" id="dropItem" to="/bracketautoligado" onClick={onCollapse}>
                                             Bracket Autoligado
                                         </NavLink>
                                         </li>

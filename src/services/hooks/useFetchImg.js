@@ -5,7 +5,7 @@ import dbStorage from "../../firebase/firebaseConfig";
 
 export const useFetchImg = (storagePath) => {
   
-    const [url, setUrl] = useState('/assets/noImg.gif');
+    const [url, setUrl] = useState('/assets/basic/noImg.gif');
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {

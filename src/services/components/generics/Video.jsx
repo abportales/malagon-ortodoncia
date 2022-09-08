@@ -15,7 +15,7 @@ export const Video = ({ url, miniCapture }) => {
                         preload="auto" loop>
                             Tu navegador no puede reproducir el video.
                     </video>)
-                    : <img src="/assets/noImg.gif" alt="isLoading" />
+                    : <img src="/assets/basic/noImg.gif" alt="isLoading" />
             }
         </section>
     )

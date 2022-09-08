@@ -17,7 +17,10 @@ export const HomePage = () => {
             <div className='container-home'>
                 <Helmet>
                     <title> {title}  </title>
-                    <meta name='description' content={title}/>
+                    <meta 
+                        name='description' 
+                        content='dentista slp, dentista en san luis potosí, dentista san luis potosí, consultorio dental slp, clinica dental' 
+                    />
                 </Helmet>
                 <Header />
                 <Carousel />

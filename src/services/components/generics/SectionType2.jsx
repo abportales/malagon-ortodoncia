@@ -26,7 +26,7 @@ export const SectionType2 = ({
                     </div>
                     <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center' 
                         data-aos='fade-up'>
-                        <h1 className='text-center titleColor2'>{title}</h1>
+                        <h2 className='text-center titleColor2'>{title}</h2>
                         <div className="contText d-flex flex-column">
                             { 
                                 paragraphList.map(

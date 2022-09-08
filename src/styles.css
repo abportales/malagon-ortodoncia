@@ -226,7 +226,7 @@ body {
 }
 /****************************** Frequency */
 
-.container-frequency h1 {
+.container-frequency h2 {
   font-size: 2em;
 }
 
@@ -238,13 +238,13 @@ body {
 }
 
 /****************************** Frequencies End */
-.contSectionType>div>h1 {
+.contSectionType>div>h2 {
   margin-top: 10px;
   font-size: 3.5vw;
 }
 
-.container-empower>div>.contSectionType>div>h1,
-.container-aobrackets>div>.contSectionType>div>h1 {
+.container-empower>div>.contSectionType>div>h2,
+.container-aobrackets>div>.contSectionType>div>h2 {
   margin-top: 10px;
   font-size: 4vw;
 }
@@ -418,7 +418,7 @@ body {
     font-size: 1.3em !important;
   }
 
-  .contSectionType>div>h1 {
+  .contSectionType>div>h2 {
     margin-top: 10px;
     font-size: 5vw;
   }
@@ -436,8 +436,8 @@ body {
     text-align: justify !important;
   }
 
-  .contTextSpecial>h1,
-  .container-invisalign>div>.contSectionType>div>.contText>h1 {
+  .contTextSpecial>h2,
+  .container-invisalign>div>.contSectionType>div>.contText>h2 {
     margin-top: 10px;
     text-align: center !important;
   }
@@ -504,8 +504,8 @@ body {
     overflow: hidden;
   }
   
-  .container-empower>div>.contSectionType>div>h1,
-  .container-aobrackets>div>.contSectionType>div>h1 {
+  .container-empower>div>.contSectionType>div>h2,
+  .container-aobrackets>div>.contSectionType>div>h2 {
     font-size: 6.5vw;
   }
 
@@ -514,7 +514,7 @@ body {
   }
 
   /*****************************Frequency */
-  .container-frequency h1 {
+  .container-frequency h2 {
     margin-top: 10px;
     font-size: 1.3em !important;
   }
@@ -577,7 +577,7 @@ body {
     height: 100vh;
   }
 
-  .container-frequency h1 {
+  .container-frequency h2 {
     font-size: 2.2em !important;
   }
 

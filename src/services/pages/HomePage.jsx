@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet'
 import { Video } from '../components/generics'
 import { Header, TypeWriter, Carousel, Services, Reviews, Location } from '../components/HomePage'
 import { TopFooter } from '../ui/components/TopFooter'
@@ -9,9 +10,15 @@ export const HomePage = () => {
         miniCap: 'video/Invisalign.jpg',
     }
 
+    const title = 'Malagón Ortodoncia y Estética Dental'
+
     return (
         <>
             <div className='container-home'>
+                <Helmet>
+                    <title> {title}  </title>
+                    <meta name='description' content={title}/>
+                </Helmet>
                 <Header />
                 <Carousel />
 
@@ -27,12 +34,14 @@ export const HomePage = () => {
                 </section>
 
                 <Services />
-                <Video url={dataVideo.url} miniCapture={dataVideo.miniCap} />          
+                <Video url={dataVideo.url} miniCapture={dataVideo.miniCap} />
 
                 < Location />
                 <Reviews numberOfReviews={3} bgColor={'bgDark'} />
                 <TopFooter bgColor={'bgDark'} />
             </div>
+
+
         </>
     )
 }

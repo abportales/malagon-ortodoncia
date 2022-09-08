@@ -31,7 +31,7 @@ export const SectionType1 = ({
                     }
                     <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center' data-aos={(imgRight) ? 'fade-right' : 'fade-left'}>
                         {
-                            (title !== '') && <h1 className='text-center titleColor2'>{title}</h1>
+                            (title !== '') && <h2 className='text-center titleColor2'>{title}</h2>
                         }
                         <div className="contText d-flex flex-column">
                             {

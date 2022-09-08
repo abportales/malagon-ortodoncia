@@ -1,7 +1,7 @@
 export const servicesHome = [
     {
         id: 'gridHome01',
-        title: 'Invisaling',
+        title: 'Invisalign®',
         info: 'Invisalign® es una técnica de ortodoncia invisible que permite alinear los dientes y mejorar la sonrisa de los pacientes mediante el uso de alineadores transparentes.',
         width: 195,
         path: '/assets/img/home/gridHome01.jpg',

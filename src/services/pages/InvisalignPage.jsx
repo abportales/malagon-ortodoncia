@@ -4,6 +4,7 @@ import { SectionType1, Video } from '../components/generics'
 import { scrollToTop } from '../helpers'
 import { useFetchImg } from '../hooks/useFetchImg'
 import { useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 
 export const InvisalignPage = () => {
 
@@ -12,18 +13,24 @@ export const InvisalignPage = () => {
   }, [])
 
   const extUrl = "https://providerbio-latam.invisalign.com/sv/1252996#start"
-  const {url} = useFetchImg('invisalign/00alineadorinvisalign.jpg')
+  const { url } = useFetchImg('invisalign/00alineadorinvisalign.jpg')
   // const url = "/assets/img/invisalign/00alineadorinvisalign.jpg"
   const data = invisalign;
+
+  const title ='Invisalign';
 
   const dataVideo = {
     url: 'video/Entrevista.mp4',
     miniCap: 'video/Entrevista.jpg',
-}
+  }
 
   return (
     <>
       <div className="container-invisalign gradient3B">
+        <Helmet>
+          <title> {title} </title>
+          <meta name='description' content={title}/>
+        </Helmet>
         {
           data.map((section) => (
             <SectionType1 key={section.id} {...section} />
@@ -40,7 +47,7 @@ export const InvisalignPage = () => {
             </div>
             <div className='col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center'
               data-aos='fade-right'>
-              <h1 className='text-center titleColor2'>¡Invisalign SmileView simula su nueva sonrisa!</h1>
+              <h2 className='text-center titleColor2'>¡Invisalign SmileView simula su nueva sonrisa!</h2>
               <div className='contTextSpecial'>
                 <span className='text-white spanResponsive'>
                   Tómate una selfie sonriendo y te mostramos lo que un tratamiento Invisalign puede hacer por ti.&nbsp;

@@ -12,10 +12,10 @@ export const MalagonApp = () => {
 
   return (
     <>
-      <Header/>
-      <Navbar/>
-      <AppRouter/>
-      <Footer/>
+      <Header />
+      <Navbar />
+      <AppRouter />
+      <Footer />
     </>
   )
 }
